@@ -1,25 +1,45 @@
-  - title: An offer
-    category: category-1
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
-    price-description: per room per night
-    saved: 40%
-    expires: 2016-03-23
-    link: #
+- title: Norway city & fjord summer holiday with railway journey
+  category: cities
+  oslo: true
+  bergen: true
+  sognefjord: true
+  location: Oslo, Balestrand & Bergen
+  description: A seriously scenic experience of Norway's spectacular landscape, from charming Oslo to majestic fjords, with an unforgettable railway journey on the famous Flåm Line – breakfast, tours and travel included
+  price: 919
+  price-description: per person for 6 nights
+  saved: 23
+  expires: 2017/03/14
+  link: https://www.secretescapes.com/norway-city-and-fjord-summer-holiday-with-railway-journey-oslo-balestrand-and-bergen/sale?utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub
 
-  - title: Another offer
-    category: category-2
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
-    price-description: per room per night
-    link: #
+- title: Grand Hotel Oslo
+  category: cities
+  oslo: true
+  location: Oslo, Norway
+  description: Stay at a distinctive hotel with chic dining options and its own wine cellar, near the National Theatre and other stately landmarks - breakfast included
+  price: 248
+  price-description: per suite per night
+  saved: 36
+  expires: 2017/03/14
+  link: https://www.secretescapes.com/grand-hotel-oslo-oslo-norway/sale?utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub
 
-  - title: A third offer
-    category: category-3
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
-    price-description: per room per night
-    link: #
+- title: Clarion Hotel Stavanger
+  category: landscapes
+  haugesund: true
+  location: Stavanger, Norway
+  description: A stylish and contemporary hotel with concept restaurant in the coastal town of Stavanger - breakfast and thoughtful extras included
+  price: 73
+  price-description: per room per night
+  saved: 53
+  expires: 2017/03/14
+  link: https://www.secretescapes.com/clarion-hotel-stavanger-stavanger-norway/sale?utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub
+
+- title:  Quality Hotel Expo
+  category: cities
+  oslo: true
+  location: Western Oslo, Norway
+  description: A scenic Norwegian break on Oslo's waterfront with easy access to city and country, includes breakfast
+  price: 76
+  price-description: per room per night
+  saved: 41
+  expires: 2017/03/14
+  link: https://www.secretescapes.com/quality-hotel-expo-western-oslo-norway/sale?utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub

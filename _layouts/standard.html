@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% assign page-class = page.title | slugify %}
+
+{% include title-banner.html %}
+
+{% include microsite-nav.html %}
+
+{{content}}

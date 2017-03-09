@@ -5,7 +5,8 @@
 
 $core-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 $main-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$title-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+$title-font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+$subtitle-font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
 
 html { font-size:62.5%; }
 body,
@@ -15,7 +16,7 @@ input, textarea, keygen, select, button {
   @include bp(medium) {
     font-size: 15px;
   }
-  color: $text-paragraph;
+  color: $paragraph-black;
 }
 
 
@@ -23,62 +24,67 @@ input, textarea, keygen, select, button {
 
 .title {
   font-family: $title-font-family;
-  letter-spacing: .025em;
+  letter-spacing: .15em;
   line-height: 1.15;
-  + * { margin-top: .5em; }
+  text-transform: uppercase;
+  + *   { margin-top: .75em; }
+  * + & { margin-top: .75em; }
+  &--margin-none + * { margin-top: 0; }
+  &--margin + * { margin-top: 1.5em; }
+  * + &--margin-top { margin-top: 3em; }
 
-  &--spacing {
-    * + & { margin-top: 15px; }
-  }
-  &--extra-margin { margin-top: 1.5em; }
   &--sub-heading { margin-top: 0 !important; }
 
-  &--light     { font-weight: 200; }
+  &--color     { color: $title-black }
+  &--sub       { font-family: $subtitle-font-family; font-weight: 400; line-height: 1.1; }
+  &--light     { font-weight: 300; }
   &--bold      { font-weight: 500; }
   &--bolder    { font-weight: 600; }
-  &--expanded  { letter-spacing: .2em; }
   &--condense  { letter-spacing: 0; }
+  &--expanded  { letter-spacing: .25em; }
   &--tight     { line-height: .9; }
   &--tighter   { line-height: .8; }
   &--upper     { text-transform: uppercase; }
   &--italic    { font-style: italic; }
 
-  &--largest {
-    font-size: 4.3em;
-    &-sub {
-      display: block;
-      font-size: .55em;
-    }
-  }
-  &--larger      { font-size: 3.375em; }
-  &--large       { font-size: 2.986em; }
-  &--medium      { font-size: 2.25em; }
-  &--small       { font-size: 2em; }
+  &--largest     { font-size: 8em; }
+  &--larger      { font-size: 6.133em; }
+  &--large       { font-size: 3.533em; }
+  &--medium      { font-size: 2.9em; }
+  &--small       { font-size: 2.2em; }
   &--smaller     { font-size: 1.867em; }
-  &--smallest    { font-size: 1.5em; }
-  &--tiny        { font-size: 1.44em; }
-  &--micro       { font-size: 1.2em; }
-  @include bp(xxlarge){
-    &--largest     { font-size: 8em; }
-    &--larger      { font-size: 6em; }
-    &--large       { font-size: 4em; }
-    &--medium      { font-size: 2.933em; }
-    &--small       { font-size: 2.467em; }
-    &--smaller     { font-size: 2.25em; }
+  &--smallest    { font-size: 1.467em; }
+  // &--tiny        { font-size: 1.44em; }
+  // &--micro       { font-size: 1.2em; }
+  // @include bp(xxlarge){
+  //   &--largest     { font-size: 8em; }
+  //   &--larger      { font-size: 6em; }
+  //   &--large       { font-size: 4em; }
+  //   &--medium      { font-size: 2.933em; }
+  //   &--small       { font-size: 2.467em; }
+  //   &--smaller     { font-size: 2.25em; }
+  // }
+}
+
+.line-length {
+  max-width: $xlarge;
+  &--center {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.paragraph {
-  &--lead {
-    font-size: 1.25em;
-    line-height: 1.25;
-  }
-  &--large { font-size: 1.05em; }
-  @include bp(large){
-    &--lead { font-size: 1.467em; }
-    &--large { font-size: 1.2em; }
-  }
+p {
+  font-weight: 200;
+  letter-spacing: .015em;
 }
+
+.p--lead {
+  font-size: 1.25em;
+  line-height: 1.55;
+}
+.p--large { font-size: 1.05em; }
+.p--small { font-size: .85em; }
 
 
 // -------- general content styles --------
@@ -87,7 +93,7 @@ p + *         { margin-top: 1em; }
 li            { list-style-position: inside; }
 ul li         { list-style-type: disc; }
 ol li         { list-style-type: decimal; }
-em            { font-style: italic; }
+em            { font-style: italic; font-weight: 400; }
 strong        { font-weight: 800; }
 .align-left   { text-align: left; }
 .align-right  { text-align: right; }

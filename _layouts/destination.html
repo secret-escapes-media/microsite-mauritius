@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+{% include title-banner.html %}
+
+{% include microsite-nav.html %}
+
+<!-- Gets the page content for the destination (long winded because jekyll is annoying) -->
+{% assign page-class = page.title | slugify %}
+{% assign destinations = site.data.[page.category] %}
+{% for destination in destinations %}
+  {% if destination.title == page.title %}
+
+  <section class="section">
+    <div class="row row--padding">
+      <div class="row align-center">
+        <p class="line-length line-length--center p--large">{{destination.intro}}</p>
+      </div>
+    </div>
+    <div class="row">
+      {% assign featured-pois = destination.poi-categories | where: 'title', 'Featured' %}
+      {% for poi in featured-pois[0].pois %}
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+        {% if thecycle == 'odd' %}
+          <div id="{% if poi.slug %}{{poi.slug}}{% else %}{{poi.title | slugify}}{% endif %}" class="row row--padding row--columns-7-5-gutters row--columns-vertical-align">
+            <div class="row__column">
+              {% if poi.link %}<a href="{{poi.link}}" target="_blank">{% endif %}<div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/{% if page.slug %}{{page.slug}}{% else %}{{page.title | slugify}}{% endif %}/{% if poi.slug %}{{poi.slug}}{% else %}{{poi.title | slugify}}{% endif %}.jpg');"></div>{% if poi.link %}</a>{% endif %}
+            </div>
+            <div class="row__column">
+              <h3 class="title title--sub title--small title--color">{{poi.title}}</h3>
+              <p>{{poi.description}}</p>
+              {% if poi.link %}<a href="{{poi.link}}" class="btn btn--outline-light" target="_blank">More Info</a>{% endif %}
+            </div>
+          </div>
+        {% else %}
+          <div id="{% if poi.slug %}{{poi.slug}}{% else %}{{poi.title | slugify}}{% endif %}" class="row row--padding row--columns-5-7-gutters row--columns-vertical-align">
+            <div class="row__column">
+              <h3 class="title title--sub title--small title--color">{{poi.title}}</h3>
+              <p>{{poi.description}}</p>
+              {% if poi.link %}<a href="{{poi.link}}" class="btn btn--outline-light" target="_blank">More Info</a>{% endif %}
+            </div>
+            <div class="row__column">
+              {% if poi.link %}<a href="{{poi.link}}" target="_blank">{% endif %}<div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/{% if page.slug %}{{page.slug}}{% else %}{{page.title | slugify}}{% endif %}/{% if poi.slug %}{{poi.slug}}{% else %}{{poi.title | slugify}}{% endif %}.jpg');"></div>{% if poi.link %}</a>{% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  {% assign grouped-pois = destination.poi-categories %}
+  {% for poi-group in grouped-pois %}
+    {% if poi-group.title != 'Featured' %}
+    <section id="{{poi-group.title | slugify}}" class="section {% cycle 'bg--light-grey', '' %}">
+      <div class="row row--padding">
+        <div class="row align-center">
+          <div class="title title--medium">{{poi-group.title}}</div>
+        </div>
+        <div class="row pois">
+          {% for poi in poi-group.pois %}<div id="{% if poi.slug %}{{poi.slug}}{% else %}{{poi.title | slugify}}{% endif %}" class="poi">
+            {% if poi.link %}<a href="{{poi.link}}" target="_blank">{% endif %}<div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/{% if page.slug %}{{page.slug}}{% else %}{{page.title | slugify}}{% endif %}/{% if poi.slug %}{{poi.slug}}{% else %}{{poi.title | slugify}}{% endif %}.jpg');"></div>{% if poi.link %}</a>{% endif %}
+            <h3 class="title title--sub title--smallest title--color">{{poi.title}}</h3>
+            <p>{{poi.description}}</p>
+            {% if poi.link %}<a href="{{poi.link}}" class="btn btn--outline-light" target="_blank">More Info</a>{% endif %}
+          </div>{% endfor %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
+  {% endfor %}
+
+  {% endif %}
+{% endfor %}
+
+<!-- OFFERS - FOR DESTINATION -->
+{% assign offers = site.data.offers | where: page-class, true | sort: 'price' %}
+{% if offers.size != 0 %}
+  <section class="section offers">
+    <div class="row row--padding">
+      <h2 class="align-center title title--medium title--color title--light title--expanded">{{page.title}} Offers</h2>
+    </div>
+    <div class="row row--padding">
+      {% for offer in offers %}
+      {% include offer.html %}
+      {% endfor %}
+    </div>
+    <div class="align-center">
+      <a href="{{site.baseurl}}/offers" class="btn btn--orange">See All Offers</a>
+    </div>
+  </section>
+{% else %}
+  <section class="section offer-promo">
+    <div class="offer-promo__bgs">
+      {% assign offers = site.data.offers %}
+      {% for offer in offers limit: 3 %}
+        <div class="offer-promo__bg" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.title | slugify }}.jpg')"></div>
+      {% endfor %}
+    </div>
+    <div class="row row--padding offer-promo__content">
+      <h2 class="title title--medium title--light title--expanded title--margin-none">Wanderlust reeling? <br class="desktop-break">Have a look at these...</h2>
+      <p class="p--lead">See all of our Secret Escapes Norway offers and expect luxury digs on a shoestring</p>
+      <a href="{{site.baseurl}}/offers" class="btn btn--orange">See All Offers</a>
+    </div>
+  </section>
+{% endif %}
+

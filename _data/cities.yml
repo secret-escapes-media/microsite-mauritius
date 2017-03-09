@@ -1,0 +1,192 @@
+- title: Oslo
+  intro-short: Oslo is fast becoming a hip city burgeoning with rich creativity, in a unique landscape and a sleek modernity that exudes effortless Scandi style.
+  intro: A startlingly modern city that seems to have reinvented itself as a top contender for city-break in the Scandi landscape. From the <em>ultra modern</em> Barcode complex that has wholly revived the waterfront, to the buzzing hub of chic cafes and <em>vintage cool</em> dotted around once industrial areas, Oslo is fast becoming a hip city burgeoning with <em>rich creativity</em>, in a unique landscape and a sleek modernity that exudes <em>effortless&nbsp;Scandi&nbsp;style</em>.
+  poi-categories:
+
+    - title: Featured
+      pois:
+
+        - title: Astrup Fearnley Museet
+          feature-title: Modern Art Heaven
+          description: As a testament to Oslo’s rejuvenation, and to its thriving arts scene, Astrup Fearnley is a beacon of contemporary art. Its architecture floats and sails on the waterway, a modernist structure that hints at a surprising collection of modern art showcasing boundary-pushing artists.
+          link: https://www.visitnorway.com/listings/astrup-fearnley-museet/3133/
+
+        - title: Mathallen
+          feature-title: A Foodie wonder
+          overview: true
+          description: Housed in a cavernous turn-of-the-century warehouse, over 30 traders offer up artisanal fayre, from cafes, fishmongers, bakers and street food heroes. Whether you’re popping in for a quick bite, a spot of dinner or to re-stock for a night in, Mathallen is bringing the best of Oslo under one roof. Foodies alight!
+          link: https://www.visitnorway.com/listings/mathallen-food-hall/8546/
+
+    - title: Micro-brews & Milkshakes
+      pois:
+
+        - title: Bare Jazz
+          description: One for the hepcats, Bare Jazz occupies a hidden courtyard in the centre of Oslo. Alight for a cappuccino, and venture inside to dig through jazz LPs – be sure to find out when they next have live jazz on too.
+          link: https://www.visitnorway.com/listings/bare-jazz/3146/
+
+        - title: Himkok
+          description: One part speakeasy, one part micro-distillery and two parts of industrial chic, Himkok is pioneering the craft spirit scene in Oslo. Hidden away in true speakeasy fashion, the innocent facade reveals a laboratory of cocktail refinement, offering mixes of truly intrepid variety.
+          link: https://www.visitnorway.com/listings/himkok/142462/
+
+        - title: Oslo Mikrobryggeri
+          description: With craft beer fast becoming a byword for trendy hipster joints, it might seem refreshing to enjoy true craft beer at a microbrewery bar that has been open since 1989. Sat amongst the mash tun and the hand pulls, enjoy a variety of brews ranging from classic pilsner to coffee stout.
+          link: https://www.visitnorway.com/listings/schouskjelleren-mikrobryggeri/9477/
+
+        - title: Teddy’s Soft Bar
+          description: One for the Teddy Boys, this kitsch cafe retains its original 1958 Americana charms – formica and sodapops, and even an original Wurlitzer jukebox so you can shake, rattle and roll all night long. Aside from being Instagram perfect (a fact one is loathed to admit), Teddy’s also attracts the local Teddy biker clubs, and serves up stellar comfort food to accompany your shake. Right on.
+          link: http://www.visitoslo.com/en/product/?TLp=168054
+
+    - title: Buy Things
+      pois:
+
+        - title: Norway Designs
+          description: Scandi design is a moniker banded around enough at present – yet this stalwart design shop has been serving up the iconic style for 50 years. For a true piece of Scandi modern in your home, discover everything from textiles to stationary in this Oslo mainstay.
+          link: https://www.visitnorway.com/listings/norway-designs/3075/
+
+        - title: Råkk & Rålls
+          slug: rakk-ralls
+          description: An unassuming facade hides an aladdin’s cave of second-hand records and cd’s. Three floors offer up a treasure for any music lover, from Nordic metal to Scandi disco, this is one for the hipsters of Oslo and beyond...
+          link: http://thevinylfactory.com/features/the-worlds-best-record-shops-13-ra%CC%8Akk-ra%CC%8Alls-oslo/
+
+        - title: Brukthall Sinsen
+          description: This vast indoor market features a host of eclectic traders in vintage kitsch – from furniture to gramophones, while away an afternoon finding a perfect Scandi bargain...
+          link: http://www.brusi.no/
+
+    - title: Heritage
+      pois:
+
+        - title: Oslo Opera House
+          description: Fast becoming an icon of the Oslo skyline and the wider Scandi architecture scene, the Oslo Opera House is a marvel of sleek Scandi design and an inviting, complimentary footprint. Its roof bows down to the floor, encouraging visitors to climb the top for exquisite views of the harbour. Oh, and there’s plenty of great events there too!
+          link: https://www.visitnorway.com/listings/the-norwegian-national-opera-%26-ballet/3657/
+
+        - title: Vikingskipshuset
+          description: A simple yet remarkable glimpse at the lives of the Vikings, the two longships Oseberg and Gokstad fill this vast space with an ethereal majesty. Used for ship burials in the local area, their remarkable preservation – accompanied by a host of lavish artefacts – offer a timewarp glance at these infamous ancestors.
+          link: https://www.visitnorway.com/listings/the-viking-ship-museum/2766/
+
+
+##############################
+
+
+- title: Bergen
+  intro-short: Norway’s second biggest city is a world away from the modernist skyline of Oslo. Following the coastline north reveals an effortlessly charming and beautifully historic city, nestled in a cove framed by snowy mountains.
+  intro: Norway’s second biggest city is a world away from the modernist skyline of Oslo. Following the coastline north reveals an effortlessly charming and <em>beautifully historic city</em>, nestled in a cove framed by snowy mountains. Its <em>seafaring heritage</em> plays itself out in the wooden alleyways of Bryggen, home to an abundance of boutiques, and in the colourful selection available at the <em>famous fish market</em>. Culture permeates the city, with more art galleries and museums than you could ever hope to explore in a weekend. Restaurants and bars keep the evenings alive, whilst solitude can be found in the many fjords that neighbour the city; for Bergen is the <em>gateway to the dramatic countryside</em>.
+  poi-categories:
+
+    - title: Featured
+      pois:
+
+        - title: Bryggen
+          feature-title: Technicolour Marvels
+          overview: true
+          description: The picture-postcard perfect Bryggen, the row of old-world technicolour buildings, brighten the city no-end and are an unforgettable icon of Bergen. With nearly 1,000 years of history, lose yourself in the wooden alleyways and explore a network of artist’s shops, for fine crafts and essential Scandi design.
+          link: https://www.visitnorway.com/places-to-go/fjord-norway/bergen/listings-bergen/bryggen-tracteursted/158339/
+
+        - title: KODE
+          feature-title: Sprawling Galleries
+          description: This collection of art museums comprise of four architecturally unique spaces, each with individual curations that together, comprise the most extensive art collection in Scandinavia. The eccentric works of Norwegian Nikolai Astrup are a highlight, along with works by Picasso, Munch and I.C. Dahl.
+          link: https://www.visitnorway.com/places-to-go/fjord-norway/bergen/listings-bergen/kode-%26%238211%3b-the-art-museums-of-bergen/2534/
+
+    - title: Modern Cool
+      pois:
+
+        - title: Mount Floyen Funicular
+          description: Who doesn’t love a funicular? I mean, it’s oh-so-slightly terrifying, considering the grand height of Mount Floyen – but the views over Bergen and the other mountains are simply unmissable.
+          link: https://www.visitnorway.com/places-to-go/fjord-norway/bergen/listings-bergen/fl%C3%B8ibanen-funicular/2559/
+
+        - title: Krok og Krinkel Bokcafe
+          description: Cafe culture is well and truly alive in Bergen – potentially catalysed by the unpredictable weather. Shack up at this quirky and cosy spot which offers stellar coffee accompanied by home-made pastries and cakes, plus a selection of books, folk records and charm a-plenty.
+          link: https://en-gb.facebook.com/krokogkrinkel/
+
+        - title: Lysverket
+          description: Housed in the impressive functionalist Kode 4 art-museum (the former power company offices), this Michelin-starred restaurant offers creative combinations of the finest local and seasonal ingredients under the helm of chef Christopher Haatuft. Hang around after dinner for cocktails and great DJs, or pop in for a great value lunch with stunning views over the river.
+          link: http://lysverket.no/
+
+        - title: Henrik Øl & Vinstove
+          slug: henrik-ol-vinstove
+          description: Bergen’s craft beer mecca offers a rotation of over 50 artisanal tipples, most brewed in Norway and the rest of Scandinavia. From porters to IPAs, let the knowledgeable staff guide you through a range of hopped up beers.
+          link: https://www.facebook.com/pages/Henrik-%C3%98l-Vinstove/120146211388331
+
+        - title: Apollon Platebar
+          description: This bar is one for the hepcats – packed with records, serving up cocktails and craft beer, and with plenty of live music, it’s a holy trinity of effortless cool in true Bergen fashion.
+          link: http://apollon.no/
+
+        - title: Aksdal i Muren
+          description: For effortless Scandi style that will help tackle the unpredictable weather in Bergen, head to this outfitters which stocks a great range of Scandi brands. For rain coats that are built to cope with the extreme Scandi weather, plus great design to match, look no further.
+          link: http://www.aksdalimuren.no/
+
+    - title: Old-world Charms
+      pois:
+
+        - title: Fantoft Stave Church
+          description: A short ride from Bergen centre is this impressive wooden church, whose origins begin in the 12th century. After being relocated to Bergen in 1883, it was the victim of a spate of church burnings by Norway’s black metal scene in 1992 – it now sits resplendently restored to its unique former glory.
+          link: https://www.visitnorway.com/places-to-go/fjord-norway/bergen/listings-bergen/fantoft-stave-church/2582/
+
+        - title: Bergen Fish Market
+          description: For a bustling atmosphere, where vendors shout their wares in thick Norwegian, head to Bergen’s fish market. From raw oysters, Scandi fish and chips, or the highlight, smoked salmon, alight for a rich selection of seafood.
+          link: https://www.visitnorway.com/places-to-go/fjord-norway/bergen/listings-bergen/fish-market-in-bergen/2548/
+
+        - title: Pingvinen
+          description: If you’re looking for trad Norwegian comfort food in trendy, comfortable surrounds, look no further than the penguin with the bow tie. This intimate eatery serves up meatballs, mutton stew and dumplings from brunch onwards, with cocktails served til 3am.
+          link: http://www.pingvinen.no/
+
+
+##############################
+
+
+- title: Trondheim
+  intro-short: The third largest of Norway’s cities, Trondheim is an effortlessly photogenic place where brightly painted wooden warehouses lead to medieval churches and wide boulevards.
+  intro: The third largest of Norway’s cities, Trondheim is an <em>effortlessly photogenic</em> place where brightly painted wooden warehouses lead to medieval churches and wide boulevards. Once the capital of Norway – Nidaro, as it was then called – was an important trading port, garnering a wealth that plays itself out in the <em>lavishly detailed cathedral</em>. Now you’ll find an eclectic mix galleries and museums, trendy eateries and buzzing bars. Pedestrianised boulevards give the centre a cosmopolitan feel, whilst the <em>famous food producing region</em> that Trondheim sits in offers restaurants the finest produce to experiment with. Should you ever manage to visit every art space, music venue, bar, eatery or historical site, epic Norwegian countryside awaits a remarkably short drive from the city.
+  poi-categories:
+
+    - title: Featured
+      pois:
+
+        - title: Nidarosdomen
+          feature-title: Medieval Majesty
+          description: The world’s northernmost gothic cathedral, with an awe-inspiring facade full of intricate details. Built on the site of St. Olav’s burial – the Viking king who brought Christianity to Norway – this impressive space dates back to 1070.
+          link: https://www.visitnorway.com/listings/nidaros-cathedral/619/
+
+        - title: Credo
+          feature-title: Stellar Dining
+          description: This Michelin-starred restaurant mixes modern minimalism with a menu that offers an inspired dining experience. Crafting the finest local produce into delectable tasting menus, enjoy the best produce this unique region has to offer – lauded as the best food producing region in Norway. A White Guide Nordic pick.
+          link: https://www.visitnorway.com/listings/credo-restaurant/703/
+
+    - title: From Rock to Royalty
+      pois:
+
+        - title: Trondheim Kunstmuseum
+          description: Modern Norwegian and Danish art from 1800 to the present adorns the walls of this impressive museum. Lithographs from Norway’s own Edvard Munch are a highlight, where free tours are available on a Sunday at 1pm.
+          link: https://www.visitnorway.com/listings/trondheim-art-museum/647/
+
+        - title: Rockheim
+          description: A museum devoted to rock and pop music mainly from Norway, from the 50s to the present day you say? With interactive displays that are seriously impressive? Wait, you can have a guitar masterclass with a famous Norwegian metalhead hologram? No contest, count me in.
+          link: https://www.visitnorway.com/listings/rockheim-norways-national-museum-of-pop-and-rock/7010/
+
+        - title: Ringve Music Museum
+          description: Trondheim clearly loves music. With the Rockheim and the Ringve, that’s two museums covering music. The Ringve holds a vast collection of instruments from across the globe, with highly knowledgeable guides to illuminate the history of music.
+          link: https://www.visitnorway.com/listings/ringve-music-museum/642/
+
+        - title: Stiftsgården
+          slug: stiftsgarden
+          description: Feel like a royal for a day with a tour around the largest wooden palace in Scandinavia. Built in the late 18th century, its impressive architecture is surpassed by the opulence of its interiors – fit for royalty, no doubt.
+          link: https://www.visitnorway.com/listings/stiftsg%C3%A5rden-the-royal-residence/640/
+
+    - title: A Famed Foodie Region
+      pois:
+
+        - title: Trondhjem Mikrobryggeri
+          description: It’s safe to say that craft beer has exploded in Norway. This microbrewery offers brewery chic as you sample brews concocted on site, sat aside the mash tun and copper piping that feeds the taps directly – beer lover's alight.
+          link: https://www.visitnorway.com/listings/trondhjem-mikrobryggeri/682/
+
+        - title: Folk & Fe
+          description: This rustic bistro serves a rotating menu of local delicacies delivered in a distinctly modern Scandi way. Expect reindeer carpaccio and plenty of smoked fish, in a typically vintage minimalist setting. A White Guide Nordic pick.
+          link: https://www.visitnorway.com/listings/folk-%26-fe/11666/
+
+        - title: Sot Bar
+          description: On a row of turn-of-the-century waterfront warehouses lies a treasure of trendy bars and restaurants, including this gem. Industrial chic is complimented by extensive craft beer selections, sumptuous cocktails, and some of the best burgers in town.
+          link: http://sotbar.no/?lang=en
+
+        - title: To Rom og Kjøkken
+          slug: to-rom-og-kjokken
+          description: This relaxed, brasserie-style restaurant offers mediterranean fayre in a charming dining room. Using only the finest local produce, artfully prepared, means this place gets special mention in the White Guide Nordic.
+          link: https://www.visitnorway.com/listings/to-rom-og-kj%C3%B8kken/6399/

@@ -1,0 +1,14 @@
+{% capture html %}
+<ul class="category-nav">
+  {% assign sections = site.html_pages | sort: "path" | sort: "destination-order" %}
+  {% for section in sections %}
+    {% capture slug    %}{{ section.url | split: "/"   | last                       }}{% endcapture %}
+    {% capture current %}{{ section.url | remove: slug | remove: "//" | append: "/" }}{% endcapture %}
+    {% if current == include.context %}
+    <li class="category-nav__item category-nav__item--{% if section.slug %}{{section.slug}}{% else %}{{section.title | slugify}}{% endif %}" style="background-image: url('{{ site.baseurl }}/img/bg/{% if section.slug %}{{section.slug}}{% else %}{{section.title | slugify}}{% endif %}/nav.jpg');">
+      <a class="category-nav__link" href="{{ site.baseurl }}{{ section.url }}"><span class="category-nav__link-wrap">{% if section.nav-title %}{{ section.nav-title }}{% else %}{{ section.title }}{% endif %}</span></a>{% if include.amount == "all-levels" %}{% include section-nav-list.html context=section.url %}{% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endcapture %}{{ html | strip_newlines | replace:'    ','' | replace:'    ','' | replace:'  ',' ' }}

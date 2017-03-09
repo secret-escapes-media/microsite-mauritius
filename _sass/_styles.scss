@@ -1,50 +1,114 @@
 // all custom styles for the site
 
 
-body {
-  background-color: $se-light-grey;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('../img/bg/bg.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-// ---------- Section styles ----------
+// ---------- GENERAL STYLES ----------
 
 .invert-text { color: $white; }
 .bg {
-  &--white      { background-color: $white; }
-  &--black      { background-color: $black; }
-  &--light-grey { background-color: $light-grey; }
-  &--dark-grey  { background-color: $dark-grey; }
-  &--text-black     { background-color: $text-black; }
-  &--text-heading   { background-color: $text-heading; }
-  &--text-paragraph { background-color: $text-paragraph; }
-  &--se-orange     { background-color: $se-orange; }
-  &--se-light-grey { background-color: $se-light-grey; }
-  &--se-dark-grey  { background-color: $se-dark-grey; }
-  &--partner-primary   { background-color: $partner-primary; }
-  &--partner-secondary { background-color: $partner-secondary; }
+  &--light-grey { background-color: $norway-light-grey; }
+}
+
+.offer-promo {
+  position: relative;
+  padding-top: ($margin*6);
+  padding-bottom: ($margin*6);
+  color: $white;
+  background-color: rgba($norway-dark-grey, .75);
+  text-align: center;
+  &__bgs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-background;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 33.33%;
+    @include background-attributes;
+    &:nth-of-type(1){ left: 0; }
+    &:nth-of-type(2){ left: 33.33%; }
+    &:nth-of-type(3){ left: 66.66%; }
+  }
 }
 
 
 // ---------- button ----------
 
 .btn {
+  position: relative;
+  display: inline-block;
+  padding: .833em 4em;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
   @include transition;
-  display:inline-block;
-  padding: .5em 1.5em;
-  border: 1px solid $se-orange;
-  font-weight: 500;
-  border-radius: 10em;
-  &:hover {
-    color: white;
-    background-color: $se-orange;
-    text-decoration: none;
+  line-height: 1;
+  &:hover { text-decoration: none; }
+  * + & { margin-top: 1.5em; }
+  &--arrow {
+    $arrow-height: 14px;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      display: block;
+      width: 8px;
+      height: $arrow-height;
+      margin-top: -($arrow-height/2);
+      background-image: url(../img/icons/btn-arrow-white.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      .svg & { background-image: url(../img/icons/btn-arrow-white.svg); }
+    }
   }
-  * + & { margin-top: 1em; }
+  &--white { background-color: rgba($white, .3);
+    &:hover { background-color: rgba($white, .5);}
+  }
+  &--red { background-color: $norway-red;
+    &:hover { background-color: darken($norway-red, 10)}
+  }
+  &--orange { background-color: $se-orange;
+    &:hover { background-color: darken($se-orange, 5)}
+  }
+  &--outline {
+    color: $norway-dark-grey;
+    border: 1px solid $norway-dark-grey;
+    &:hover {
+      color: $white;
+      background-color: $norway-dark-grey;
+    }
+  }
+  &--outline-light {
+    color: $norway-dark-grey;
+    border: 1px solid $norway-grey;
+    &:hover {
+      background-color: $norway-grey;
+    }
+  }
+  &--pulse {
+    box-shadow: 0 0 0 0 rgba(#fff, 0.2);
+    animation: pulse 3s infinite cubic-bezier(0.66, 0, 0, 1);
+    &:hover{
+      animation: none;
+      transform: scale(1.1);
+    }
+  }
+}
 
-  &--solid { color: white; border: 0; background-color: $se-orange; }
-  &--large { font-size: 1.2em; padding: .5em 3em; }
+// animation for the pulsing button
+@keyframes pulse {
+  60%, 100% {
+    box-shadow: 0 0 0 22px rgba(#fff, 0);
+  }
 }

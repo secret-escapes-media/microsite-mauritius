@@ -1,0 +1,143 @@
+---
+layout: default
+title: Overview
+nav-order: 1
+---
+
+<div class="slider">
+  <div class="js-fade-out slider__overlay align-center">
+    <div class="slider__overlay-wrap">
+      <h1 class="title title--largest title--expanded title--light">Norway</h1>
+      <span><a href="#" class="js-launch-slider btn btn--white btn--arrow btn--pulse">Start the tour</a></span>
+    </div>
+  </div>
+  <div class="slider__info row">
+    <div class="slider__info-left"><div class="slider__location js-slider-location"></div></div>
+    <div class="slider__info-right"><a href="#" class="btn btn--white btn--arrow js-slider-link">More Info</a></div>
+  </div>
+
+  <div class="owl-carousel">
+    <div class="slider__content" style="background-image: url('{{site.baseurl}}/img/content/overview/tour/reinebringen-mountain-lofoten.jpg');" data-link="{{site.baseurl}}/landscapes/lofoten-and-vesteralen/" data-location="Reinebringen mountain, Lofoten"></div>
+    <div class="slider__content" style="background-image: url('{{site.baseurl}}/img/content/overview/tour/aksla-viewpoint-alesund.jpg');" data-link="{{site.baseurl}}/landscapes/alesund-and-sunnmore/" data-location="Aksla viewpoint, Ålesund"></div>
+    <div class="slider__content" style="background-image: url('{{site.baseurl}}/img/content/overview/tour/borgund-stave-church-sognefjord.jpg');" data-link="{{site.baseurl}}/landscapes/sognefjord/" data-location="Borgund stave church, Sognefjord"></div>
+    <div class="slider__content" style="background-image: url('{{site.baseurl}}/img/content/overview/tour/nidelva-river-trondheim.jpg');" data-link="{{site.baseurl}}/cities/trondheim/" data-location="Nidelva river, Trondheim"></div>
+    <div class="slider__content" style="background-image: url('{{site.baseurl}}/img/content/overview/tour/reine-village-lofoten.jpg');" data-link="{{site.baseurl}}/landscapes/lofoten-and-vesteralen/" data-location="Reine village, Lofoten"></div>
+    <div class="slider__content" style="background-image: url('{{site.baseurl}}/img/content/overview/tour/hjorundfjorden-sunnmore.jpg');" data-link="{{site.baseurl}}/landscapes/alesund-and-sunnmore/" data-location="Hjørundfjorden, Sunnmøre"></div>
+    <div class="slider__content" style="background-image: url('{{site.baseurl}}/img/content/overview/tour/fjora-village-sunnmore.jpg');" data-link="{{site.baseurl}}/landscapes/alesund-and-sunnmore/" data-location="Fjørå village, Sunnmøre"></div>
+  </div>
+</div>
+
+{% include microsite-nav.html %}
+
+
+<!-- MAIN FEATURES -->
+<section class="section">
+
+  <div class="row row--padding row--columns-5-7-gutters row--columns-vertical-align">
+    <div class="row__column">
+      <h2 class="title title--sub title--medium title--color title--light title--light">Sublime Landscapes</h2>
+      <p>Norway offers landscapes that will leave you reeling – crystalline fjords mark the base of towering peaks, dramatic in their splendour and rugged disposition. Vast sheets of tumbling ice form epic glaciers that deserve exploring, whilst a patchwork of islands can be hopped about on offering seclusion in the serene landscape of Norway.</p>
+      <a href="{{site.baseurl}}/landscapes/alesund-and-sunnmore" class="btn btn--red">Discover Geirangerfjord</a>
+    </div>
+    <div class="row__column">
+      <a href="{{site.baseurl}}/landscapes/alesund-and-sunnmore"><div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/overview/landscapes.jpg');"></div></a>
+    </div>
+  </div>
+
+
+
+  <div class="row row--padding row--columns-7-5-gutters row--columns-vertical-align">
+    <div class="row__column">
+      <a href="{{site.baseurl}}/landscapes/alesund-and-sunnmore"><div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/overview/architecture.jpg');"></div></a>
+    </div>
+    <div class="row__column">
+      <h2 class="title title--sub title--medium title--color title--light">Leading Art&nbsp;&amp; Architecture</h2>
+      <p>World-leading galleries, museums and artists permeate the cultural landscape of Norway, which frames them in unique and compelling architecture. From the ultra-modern Barcode and Oslo Opera house, to the traditional, technicolour Bryggen buildings and the historic Stave churches dotted around the country, Norway is awash with resplendent design.</p>
+      <a href="{{site.baseurl}}/landscapes/alesund-and-sunnmore" class="btn btn--red">See Norwegian Art-Nouveau</a>
+    </div>
+  </div>
+
+  <div class="row row--padding row--columns-5-7-gutters row--columns-vertical-align">
+    <div class="row__column">
+      <h2 class="title title--sub title--medium title--color title--light">Vibrant History</h2>
+      <p>Norway’s landscape has dictated its seafaring history. From the quaint fishing villages that time seemingly forgot, to the rich Viking heritage that provides a proud backdrop to the traditions and culture of its people, Norway has a prolific heritage that invites discovery.</p>
+      <a href="{{site.baseurl}}/landscapes/haugesund" class="btn btn--red">See Viking Heritage</a>
+    </div>
+    <div class="row__column">
+      <a href="{{site.baseurl}}/landscapes/haugesund"><div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/overview/history.jpg');"></div></a>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- SUB FEATURES -->
+<section class="section bg--light-grey">
+  <div class="row row--columns-6-6-gutters row--padding align-center">
+    <div class="row__column">
+      <h3 class="title title--small title--color title--margin">Cites</h3>
+      <div class="row">
+        {% assign category = site.data.cities %}
+        {% for place in category %}
+          {% assign thingy = place.poi-categories | where: 'title', 'Featured' %}
+          {% for poi in thingy[0].pois %}
+            {% if poi.overview == true %}
+              <!-- <p>{{poi.feature-title}}</p> -->
+              <div class="featured-poi featured-poi--overview">
+                <a href="{{site.baseurl}}/cities/{% if place.slug %}{{place.slug}}{% else %}{{place.title | slugify}}{% endif %}/">
+                  <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/{% if place.slug %}{{place.slug}}{% else %}{{place.title | slugify}}{% endif %}/{% if poi.slug %}{{poi.slug}}{% else %}{{poi.title | slugify}}{% endif %}.jpg');">
+                    <div class="featured-poi__overlay">
+                      <h3 class="title title--sub title--small">{{poi.feature-title}}</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+      <a href="{{site.baseurl}}/cities" class="btn btn--outline">See More Cites</a>
+    </div>
+    <div class="row__column">
+      <h3 class="title title--small title--color title--margin">Landscapes</h3>
+      <div class="row">
+        {% assign category = site.data.landscapes %}
+        {% for place in category %}
+          {% assign thingy = place.poi-categories | where: 'title', 'Featured' %}
+          {% for poi in thingy[0].pois %}
+            {% if poi.overview == true %}
+              <!-- <p>{{poi.feature-title}}</p> -->
+              <div class="featured-poi featured-poi--overview">
+                <a href="{{site.baseurl}}/landscapes/{% if place.slug %}{{place.slug}}{% else %}{{place.title | slugify}}{% endif %}/">
+                  <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/{% if place.slug %}{{place.slug}}{% else %}{{place.title | slugify}}{% endif %}/{% if poi.slug %}{{poi.slug}}{% else %}{{poi.title | slugify}}{% endif %}.jpg');">
+                    <div class="featured-poi__overlay">
+                      <h3 class="title title--sub title--small">{{poi.feature-title}}</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+      <a href="{{site.baseurl}}/landscapes" class="btn btn--outline">See More Landscapes</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- OFFERS - ONLY 2 -->
+<section class="section offers">
+  <div class="row row--padding">
+    <h2 class="align-center title title--medium title--color title--expanded title--light">Offers</h2>
+  </div>
+  <div class="row row--padding">
+    {% assign offers = site.data.offers | sort: 'price' %}
+    {% for offer in offers limit: 2 %}
+      {% include offer.html %}
+    {% endfor %}
+  </div>
+  <div class="align-center">
+    <a href="{{site.baseurl}}/offers" class="btn btn--orange">See All Offers</a>
+  </div>
+</section>

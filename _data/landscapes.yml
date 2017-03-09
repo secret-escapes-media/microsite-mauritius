@@ -1,0 +1,243 @@
+- title: Ålesund & Sunnmøre
+  slug: alesund-and-sunnmore
+  intro-short: From the enchanting archipelago of Ålesund, set within a startling array of lakes that bleed into a network of fjords, to the vast mountain range of the Sunnmøre Alps, Ålesund & Sunnmøre are a playground of outdoor pursuits and remarkable culture.
+  intro: From the enchanting archipelago of Ålesund, set within a startling array of lakes that bleed into a network of fjords, to the <em>vast mountain range</em> of the Sunnmøre Alps, Ålesund & Sunnmøre are a <em>playground of outdoor pursuits</em> and remarkable culture. Uncover the <em>Art-Nouveau grandeur</em> of Ålesund, or discover sublime fjord landscapes that beg to be explored.
+  poi-categories:
+
+    - title: Featured
+      pois:
+
+        - title: Ålesund Art Nouveau Centre
+          feature-title: Jugendstil
+          slug: alesund-art-nouveau-centre
+          description: Ålesund is a surprising marvel of Atlantic Art-Nouveau splendour. Since a fire devastated the city in 1903, Jugendstil (Art-Nouveau) became the architectural template. Discover the unique style and history within a Jugendstil icon.
+          link: https://www.visitnorway.com/listings/the-art-nouveau-centre-%26-the-art-museum-kube/1140/
+
+        - title: Geirangerfjord
+          feature-title: Vast Fjords
+          description: This sublime fjord is a treasure of spectacular outdoor scenes. Take a boat or a kayak, as the stern slopes of the mountains rise dramatically from the water. The highlight has to be the waterfall known as the Seven Sisters, a simply glorious sight to behold.
+          link: https://www.visitnorway.com/listings/the-geirangerfjord/5901/
+
+    - title: Be inspired
+      pois:
+
+        - title: Alnes
+          description: This sleepy fishing village epitomises the isolated oasis we all imagine when we think of Norway. Its iconic lighthouse signals Norway’s nostalgic coastal past, and is now a marker for finishing long hikes with local crafts and sweet treats – for island sanctuary, look no further.
+          link: https://www.visitnorway.com/listings/alnes-fishing-village/1054/
+
+        - title: Runde
+          description: The small outpost known as bird island is home to the largest variety of seabird species in Scandinavia. Alight here to catch the puffins, skuas, gannets and shags, and immerse yourself in this unique spot for intimately catching wildlife.
+          link: https://www.visitnorway.com/listings/runde-bird-island/1153/
+
+        - title: Tvindefossen Waterfall
+          description: This stunning natural wonder cascades over a spread of rocky outcrops, creating a scene of sublime beauty. Cameras at the ready for this one, it’s a perfect spot for a picnic and a hike to the top!
+
+        - title: Briksdal Glacier
+          description: A bucket-list topping experience when this far north is to see the dramatic ice marvel of a glacier. Explore Briksdal, and enjoy epic trails for inspired hiking, or hop in a ‘troll car’ to visit the grand heights of the glacier.
+          link: https://www.visitnorway.com/listings/briksdal-glacier/3571/
+
+        - title: Hornindalsvatn Lake
+          description: This vast lake is Europe’s deepest, and paints a typical Norwegian picture with the jutting peaks that tower over its edges. The water is impeccably clear, as no glacial water runs into the lake – so take a boat trip, indulge in a spot of fishing, or take a swim for a true Scandi experience.
+          link: https://www.visitnorway.com/listings/hornindalsvatn-lake/3572/
+
+    - title: Get Active
+      pois:
+
+        - title: Ålesund Kayaking
+          slug: alesund-kayaking
+          description: The unique lay of the land offers a thoroughly unique kayaking experience. From gliding past the colourful waterside buildings of the town, to exploring the magnificent archipelago framed by vast peaks, hop on a kayak and start your very own adventure.
+
+        - title: Loen Skylift
+          description: Set to open in late May, Loen Skylift will be one of the steepest cable cars in the world. Panoramic views over the fjord landscapes abound, as you climb to the towering heights of Mt. Hoven. On the edge of the mountain is Hoven restaurant, where you can dine with spectacular views over the epic landscape.
+          link: https://www.visitnorway.com/listings/loen-skylift/189788/
+
+        - title: Flydalsjuvet
+          description: Hiking in Norway is all about one thing – sublime views. Hike up the steep mountainside far above the pretty village of Geiranger, and be greeted by simply jaw-dropping vistas over the Geirangerfjord as cruise ships roll in and out of the small harbour.
+          link: https://www.visitnorway.com/listings/flydalsjuvet/5904/
+
+        - title: Hike the Sunnmøre Alps
+          slug: hike-the-sunnmore-alps
+          description: This range of mountains rise up to heights of 1600m, jutting in alpine splendour from serene crystalline pools. A good starting ground would be Sykkylven, which provides a range of hikes of varying difficulty, each promising epic views of fjords and peaks.
+
+
+##############################
+
+
+- title: Lofoten & Vesterålen
+  slug: lofoten-and-vesteralen
+  intro-short: Island hop on Norway’s beautiful Lofoten and Vesterålen islands, and discover serene idylls perfect for finding true Norwegian solace. The Arctic environment permeates island living here.
+  intro: Island hop on Norway’s beautiful Lofoten and Vesterålen islands, and discover serene idylls perfect for finding true Norwegian solace. The <em>Arctic environment</em> permeates island living here. It creates an enchanting environment that offers strikingly unique opportunities like <em>midnight kayaking</em>, with a light that artists and photographers yearn for – represented in the host of galleries spread amongst the isolated island collections. Sleepy villages dot the island outposts, where fish drying racks create an inescapable impression of the bounty this area offers.
+  poi-categories:
+
+    - title: Featured
+      pois:
+
+        - title: Diving
+          feature-title: Intrepid Experiences
+          description: Diving in Arctic waters may seem a bit of a misnomer, but the clarity of this ice-cold sea offers a remarkable landscape for exploration. Explore the unique flora and fauna of the Arctic tundra, and immerge wholly refreshed by the icy waters.
+          link: https://www.visitnorway.com/listings/diving-in-lofoten/125921/
+
+        - title: Midnight Kayaking in Svolvær
+          overview: true
+          feature-title: Sublime Backdrops
+          slug: midnight-kayaking-in-svolvaer
+          description: The silence is staggering. The water barely moves as you glide across, and as the sun slowly re-appears, a golden light reflects all around igniting the surface around you. A sublime experience not to be missed.
+          link: https://www.visitnorway.com/listings/midnight-kayaking-from-svolv%C3%A6r/190503/
+
+    - title: Head out to sea
+      pois:
+
+        - title: Fishing Trip from Ballstad
+          description: The waters around these islands team with a bounty of fish. Fishing is the cornerstone of island life here, so head out with a local skipper and live the culture of Lofoten and Vesterålen.
+          link: https://www.visitnorway.com/listings/fishing-trip-from-ballstad/125919/
+
+        - title: Arctic Surfing
+          description: This may sound like a mighty bad idea, but the clear waters coupled with the great waves make surfing round here an exhilarating and wholly unique experience. Arctic surfing has surged in popularity, with innovations in wet suits (and portable saunas!) making it marginally more comfortable.
+
+        - title: Whale Spotting
+          description: No experience easily rivals the majesty of spotting whales or orcas coming up for air. Øksnes offers whale safaris that guarantee a glimpse at these ocean behemoths, whilst spotting a unique range of seabird en route.
+
+    - title: Stay on dry land
+      pois:
+
+        - title: Lofotr Viking Museum
+          description: Viking heritage permeates the culture of Norway. Discover the largest Viking building ever discovered, and visit the adjacent full-size replica, complete with living museum. Book ahead for Viking feasts or to row on a Viking boat, or try your luck at archery.
+          link: http://www.lofotr.no/index.asp
+
+        - title: Magic Ice
+          description: This ice bar and gallery features ice sculptures of Lofoten life, with a grandeur owed to their vast scale and shimmering material. Warm up with a cocktail served in an ice tumbler, included in the admission – along with warm clothes!
+          link: https://www.visitnorway.com/listings/magic-ice/127213/
+
+        - title: Lofoten Gårdsysteri
+          slug: lofoten-gardsysteri
+          description: Stop off at this organic farm, where goats, pigs and chickens hustle for attention. The small farm shop will offer you a selection of cheese made here along with handmade sausages and honey, perfect for a picnic.
+          link: https://www.visitnorway.com/listings/lofoten-g%C3%A5rdsysteri/130598/
+
+        - title: Børsen Spiseri
+          slug: borsen-spiseri
+          description: Head for this old quayside warehouse, that has been lovingly converted into a restaurant with bucketloads of character. The creaky wooden interior is wholesome and rustic, which compliments the trad Norwegian flavours and produce perfectly. Fish is obviously highly recommended!
+          link: https://www.visitnorway.com/listings/b%C3%B8rsen-spiseri/130507/
+
+
+##############################
+
+
+- title: Sognefjord
+  intro-short: Sognefjord is one of the most impressive fjords in Norway. It’s the longest and deepest, bestowing upon it a majesty played out in the sublime scenery that it offers.
+  intro: Sognefjord is one of the most <em>impressive fjords in Norway</em>. It’s the longest and deepest, bestowing upon it a majesty played out in the <em>sublime scenery</em> that it offers. Small, colourful villages dot the waterside, giving way to piercing mountains that rate among the best for intrepid hiking in Norway. The arm of Nærøyfjord has World Heritage status, owing to its <em>natural splendour</em>. The region is also known for its delicacies, including <em>renowned goat’s cheese</em>. For outdoor pursuits and quaint village charms, look no further than this <em>fjordic&nbsp;jewel</em>.
+  poi-categories:
+
+    - title: Featured
+      pois:
+
+        - title: The Flåm Railway
+          slug: the-flam-railway
+          overview: true
+          feature-title: Breathtaking Travels
+          description: Named as one of the most beautiful railway journeys in the world, alight for stupendous fjordic scenery – cascading waterfalls and jutting snow-capped peaks await. One of the steepest railway lines in the world will elevate you from sea-level at Flåm up to the mountain station of Myrdal in an hour, and provide so captivating you’ll jump straight back on and do it all over again!
+          link: https://www.visitnorway.com/listings/the-fl%C3%A5m-railway/4202/
+
+        - title: Undredal
+          feature-title: Quaint Villages
+          description: This incredibly picturesque village sits on the banks of the UNESCO World Heritage Naeroyfjord, offering quintessential Norwegian small-town charms. 80 citizens, 300 goats and the smallest stave church in Scandinavia only add to the charm – be sure to try the goat’s cheese, which this village is famous for.
+
+    - title: Live the culture
+      pois:
+
+        - title: Borgund Stave Church
+          description: Sognefjord may be an outdoor destination, but Borgund Stave Church deserves special mention. The remarkable preservation of its intricate details are a must-see, dating from 1180 – making it the most exceptional example in Norway.
+          link: https://www.visitnorway.com/listings/borgund-stave-church/10521/
+
+        - title: Urnes Stave Church
+          description: The oldest stave church in the region (a UNESCO World Heritage site), Urnes was built around 1130 – though certain details, like the north portal carvings, are much older. These iconic churches paint a breathtaking picture in this fjordic landscape, and deserve exploring.
+          link: https://www.visitnorway.com/listings/urnes-stave-church/5326/
+
+        - title: Ægir Brewpub
+          slug: aegir-brewpub
+          description: After days of hiking and soaking up the active pursuits available in this intrepid area, head to this brewpub and sample lauded Norwegian craft beer. Reminiscent of a stave church, this is a mecca for hopped up ales and moody stouts, perfect for winding down after scaling a mountain.
+          link: https://www.visitnorway.com/listings/%C3%86gir-brewpub/12025/
+
+    - title: Discover the outdoors
+      pois:
+
+        - title: Glacier Walking
+          feature-title: Featured Alternate Title
+          description: The unique landscape of Norway offers remarkable experiences, and walking on the epic ice sheets that form these vast glaciers is surely up there. Navigate ice towers and crevasses, steep slopes and dramatic vistas that are sure to leave you breathless.
+
+        - title: Stegastein Viewpoint
+          description: This viewing platform is a massive draw for photographers, owing to the fact that it offers unspoilt panorama over the exquisite fjordic landscape. Its design is remarkable in itself, seemingly falling off the edge of the mountainside – an Instagram hotspot for sure.
+          link: https://www.visitnorway.com/listings/stegastein-viewpoint/171495/
+
+        - title: Cycle the Rallar Road
+          description: The Raller Road is one of the most popular cycling routes in Norway. It’s nearly 80km of epic views, from mountain down fjord, stretching from Flåm to Haugastol. Discover sublime waterfalls as you sail down mountains – while fjords unravel ahead.
+          link: https://www.visitnorway.com/listings/biking-the-rallar-road/6678/
+
+        - title: Balestrand Rib Tour
+          description: Explore the dramatic fjord by an exhilarating rib tour. Leaving Balestrand, you’ll glide past awe-inspiring wonders like the Esebottn mountains and the sublime 120m drop of the Kvinnafossen waterfall.
+          link: https://www.visitnorway.com/listings/balestrand-fjord-sigtseeing/8854/
+
+        - title: Fjord Kayak
+          description: If you don’t fancy the uptempo jostling of a Rib, enjoy the independent calm of adventuring on your own kayak. Take in the glorious fjordic surroundings, from towering peaks to cascading waterfalls, all at your own leisure.
+          link: https://www.visitnorway.com/listings/guided-kayaking-in-balestrand/181612/
+
+
+##############################
+
+
+- title: Haugesund
+  intro-short: Haugesund is lauded as the home of the Vikings, and the birthplace of Norway. With such high status to live up to, the port city has made itself a cultural centre to rival Oslo, whilst the region offers island-hopping exploration and outdoor pursuits.
+  intro: Haugesund is lauded as the home of the Vikings, and the <em>birthplace of Norway</em>. With such high status to live up to, the port city has made itself a cultural centre to rival Oslo, whilst the region offers <em>island-hopping exploration</em> and outdoor pursuits. Norway was unified here in 872, after a decisive battle at Hafrsfjord, and its <em>Viking roots</em> can be found in a host of museums that tell the story of the kings of old. The contemporary scene offers cafe culture and jazz and film festivals, making this region an <em>eclectic mix of history and culture</em>. Discover secluded islands and bustling towns, with epic Norwegian landscapes to boot.
+  poi-categories:
+
+    - title: Featured
+      pois:
+
+        - title: Utsira
+          feature-title: Peaceful Isolation
+          description: Take the daily ferry (an adventure in itself) over to this incredibly isolated island. Norway’s smallest municipality, it’s awash with quaint charms and a host of birdlife – plus a surprising flourish of street-art. Bicycles are loaned to visitors free of charge, which is probably the cutest thing in the world ever.
+          link: https://www.visitnorway.com/listings/utsira-the-island-that-restore-your-energy/3706/
+
+        - title: Film & Jazz Festivals
+          feature-title: Electric Culture
+          description: Every August, Haugesund hosts two of Norway’s finest festivals. Sildajazzen is an internationally acclaimed jazz festival that sees musicians travel from around the globe, while the Norwegian Film Festival showcases acclaimed international film.
+
+    - title: From towns to villages
+      pois:
+
+        - title: Haugesund
+          description: A cosy coastal city with a surprising cosmopolitan flair that plays itself out in the longest pedestrianised street in Norway – packed with a host of cafes, bars and boutiques. Music and art thrive here, so be sure to visit the museums and galleries before catching a show.
+          link: https://www.visitnorway.com/listings/haugesund-tourist-information/5099/
+
+        - title: Avaldsnes
+          description: Norway’s oldest royal seat, Avaldsnes was home to viking royalty. It was here that Harald Fairhair, the unifier of Norway, made his home to rule the Vikings across the land. Visit this large museum, complete with living museum, to learn more about the history of the Vikings in this mythical area.
+          link: https://www.visitnorway.com/listings/avaldsnes-tourist-information/142365/
+
+        - title: Skudeneshavn
+          description: Get lost in the narrow streets of this traditional harbour town, where white wooden houses provide a network of alleys to explore. Old-world charm abounds, with a bustling market rivalled by the annual boating and literature festivals.
+          link: https://www.visitnorway.com/listings/historic-skudeneshavn/1607/
+
+        - title: Arquebus War Museum
+          description: Learn about the Norwegian resistance during World War II in this vast museum, that documents the occupation and liberation of Norway. Full-size mannequins bring the place to life, if not in a slightly kitsch fashion.
+          link: https://www.visitnorway.com/listings/arquebus-war-museum/5540/
+
+        - title: Røvær Island
+          slug: rovaer-island
+          description: This region is dotted with hidden island communities, and Røvær is no exception. 110 inhabitants and only one car allow an intrepid glance at a community life that barely exists in this day and age – head for this sublime sanctuary for a true taste of island life.
+          link: https://www.visitnorway.com/listings/r%C3%B8v%C3%A6r-kulturhotell/1687/
+
+    - title: Natural splendour
+      pois:
+
+        - title: Langfoss Waterfall
+          description: Voted as one of the top 10 waterfalls in the world, Langfoss surges down the mountainside from dizzying height. As it falls into the fjord below, stand on the road bridge that crosses it to get an intimate impression of its dramatic display.
+          link: https://www.visitnorway.com/listings/langfoss-waterfall/2135/
+
+        - title: Karmøy Beach Hike
+          slug: karmoy-beach-hike
+          description: A trail runs along the long, white sandy beaches of Karmøy that begs to be explored. Running from the village of Åkra to the village of Ferkingstad, you’ll spot Viking landmarks like the ruined boathouse and two stone monuments representing King Augvald’s daughters.
+          link: https://www.visitnorway.com/listings/karm%C3%B8y-beaches-hike-the-white-sandy-dunes/7778/
+
+        - title: Høyt og Lavt
+          slug: hoyt-og-lavt
+          description: Climb high into the forest canopy at this exhilarating climbing park. Catering to a range of abilities, you’ll be clinging on to high wires and zipping down canopies in no time.
+          link: https://www.visitnorway.com/places-to-go/southern-norway/kristiansand/listings-kristiansand/h%C3%B8yt-%26-lavt-kristiansand-climbing-park/181577/

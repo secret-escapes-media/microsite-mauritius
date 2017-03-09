@@ -1,5 +1,5 @@
 {
-  "name": "se-microsite-template",
+  "name": "norway",
   "version": "0.0.0",
   "license": "MIT",
   "ignore": [
@@ -12,6 +12,8 @@
   "devDependencies": {
     "jquery": "1.11.1",
     "susy": "~2.2.6",
-    "reset-css": "^2.2.0"
+    "reset-css": "^2.2.0",
+    "owl.carousel": "owl-carousel2#^2.2.0",
+    "jquery.countdown": "^2.2.0"
   }
 }
