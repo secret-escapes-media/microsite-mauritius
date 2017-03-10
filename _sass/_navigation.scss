@@ -58,10 +58,10 @@ $site-nav-height: 70px;
     &--right {
       display: none;
     }
-    @include bp(medium){
+    @include bp(small){
       &--center{ width: auto; }
     };
-    @include bp( large ){
+    @include bp( medium ){
       &--right {
         right: 0;
         display: block;
@@ -166,7 +166,7 @@ $nav-arrow-width: 66px;
       background-repeat: no-repeat;
       background-size: $nav-arrow-width auto;
     }
-    @include bp(large){
+    @include bp(medium){
       // remove the prompt for sideways scroll
       padding-right: 0;
       overflow: visible;
@@ -179,9 +179,12 @@ $nav-arrow-width: 66px;
     border-left: .5px solid $light-grey;
     @include transition;
     &:last-of-type { border-right: .5px solid $light-grey; }
-    &:hover,
     &--current {
       color: $norway-red;
+      background-color: $norway-red-light;
+      border-color: $norway-red-light;
+    }
+    &:hover {
       background-color: $norway-red-light;
       border-color: $norway-red-light;
     }
@@ -195,7 +198,7 @@ $nav-arrow-width: 66px;
     &:hover,
     &--current { text-decoration: none; }
   }
-  @include bp(large){
+  @include bp(medium){
     overflow: visible;
     height: auto;
     .flexbox & {
@@ -248,6 +251,7 @@ $nav-arrow-width: 66px;
     height: ($site-nav-height*3);
     background-color: $norway-dark-grey;
     color: $norway-dark-grey;
+    vertical-align: top;
     @include background-attributes;
   }
   &__link {
@@ -335,7 +339,7 @@ $mobile-nav-width: 75%;
     @include bp-vertical {
       position: static;
     }
-    @include bp(large){
+    @include bp(medium){
       display: none;
     }
   }

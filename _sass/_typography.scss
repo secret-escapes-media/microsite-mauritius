@@ -27,6 +27,7 @@ input, textarea, keygen, select, button {
   letter-spacing: .15em;
   line-height: 1.15;
   text-transform: uppercase;
+  word-break: break-word;
   + *   { margin-top: .75em; }
   * + & { margin-top: .75em; }
   &--margin-none + * { margin-top: 0; }
@@ -47,23 +48,31 @@ input, textarea, keygen, select, button {
   &--upper     { text-transform: uppercase; }
   &--italic    { font-style: italic; }
 
-  &--largest     { font-size: 8em; }
-  &--larger      { font-size: 6.133em; }
-  &--large       { font-size: 3.533em; }
-  &--medium      { font-size: 2.9em; }
-  &--small       { font-size: 2.2em; }
+  &--largest     { font-size: 2.25em; }
+  &--larger      { font-size: 2.25em; }
+  &--large       { font-size: 2em; }
+  &--medium      { font-size: 1.867em; }
+  &--small       { font-size: 1.867em; }
   &--smaller     { font-size: 1.867em; }
   &--smallest    { font-size: 1.467em; }
-  // &--tiny        { font-size: 1.44em; }
-  // &--micro       { font-size: 1.2em; }
-  // @include bp(xxlarge){
-  //   &--largest     { font-size: 8em; }
-  //   &--larger      { font-size: 6em; }
-  //   &--large       { font-size: 4em; }
-  //   &--medium      { font-size: 2.933em; }
-  //   &--small       { font-size: 2.467em; }
-  //   &--smaller     { font-size: 2.25em; }
-  // }
+  @include bp(medium){
+    &--largest     { font-size: 2.986em; }
+    &--larger      { font-size: 2.986em; }
+    &--large       { font-size: 2.488em; }
+  }
+  @include bp(large){
+    &--largest     { font-size: 5.16em; }
+    &--larger      { font-size: 4em; }
+    &--large       { font-size: 3.375em; }
+    &--medium      { font-size: 2.488em; }
+    &--small       { font-size: 2.2em; }
+  }
+  @include bp(xxxlarge){
+    &--largest     { font-size: 8em; }
+    &--larger      { font-size: 6.133em; }
+    &--large       { font-size: 3.533em; }
+    &--medium      { font-size: 2.9em; }
+  }
 }
 
 .line-length {

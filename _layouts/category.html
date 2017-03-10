@@ -13,7 +13,7 @@ layout: default
   <section class="section">
     <div class="row row--padding">
       <div class="row align-center">
-        <h2 class="align-center title title--large title--color title--expanded title--light">{{place.title}}</h2>
+        <h2 class="align-center title title--large title--color title--expanded title--light"><a class="a--plain" href="{{site.baseurl}}/{% if page.slug %}{{page.slug}}{% else %}{{page.title | slugify}}{% endif %}/{% if place.slug %}{{place.slug}}{% else %}{{place.title | slugify}}{% endif %}">{{place.title}}</a></h2>
         <p class="line-length line-length--center p--large">{{place.intro-short}}</p>
       </div>
       <div class="row">

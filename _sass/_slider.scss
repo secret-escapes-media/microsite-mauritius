@@ -8,6 +8,7 @@ $info-height: 70px;
   height: 100%;
   height: calc(100% - #{$info-height + 2});
   color: $white;
+  overflow: hidden;
   &__content {
     height: 100%;
     height: calc(100% - #{$info-height + 2});
@@ -28,7 +29,7 @@ $info-height: 70px;
       left: 0;
       right: 0;
       z-index: $z-content;
-      padding-top: 33%;
+      padding-top: 25vh;
       .csstransforms.csstransforms3d & {
         top: 50%;
         padding-top: 0;
@@ -38,25 +39,34 @@ $info-height: 70px;
   }
   &__info {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: $margin;
+    right: $margin;
     bottom: 0;
     z-index: $z-content-upper;
     height: $info-height;
-    border-top: 1px solid $white-5;
     pointer-events: none;
+    @include bp(xxxlarge){
+      right: 0;
+      left: 0;
+    }
+    &-wrap {
+      border-top: 1px solid $white-5;
+    }
   }
   &__info-right,
   &__info-left {
     position: absolute;
-    bottom: 0;
+    top: 0;
     z-index: $z-content-upper;
     height: $info-height;
     line-height: $info-height;
     pointer-events: all;
   }
   &__info-right { right: 0; }
-  &__info-left { left: 0; }
+  &__info-left {
+    left: 0;
+    padding-right: 3.5em;
+  }
   &__location {
     &:before {
       content: "";
@@ -76,6 +86,7 @@ $info-height: 70px;
   }
 }
 
+// reseting all of the owl-carousel styles. also using the classes it gives everything
 .owl-carousel {
   position: relative;
   height: 100% !important;
@@ -87,6 +98,7 @@ $info-height: 70px;
   position: absolute;
   bottom: 0;
   z-index: $z-content-upper;
+  display: block;
   height: $info-height;
   width: 100%;
   text-align: center;
@@ -97,7 +109,7 @@ $info-height: 70px;
 
 .owl-dot {
   $dot-size: 10px;
-  display: inline-block;
+  display: none;
   height: $dot-size;
   width: $dot-size;
   background-color: $white-5;
@@ -105,9 +117,13 @@ $info-height: 70px;
   transition: all 1.25s ease; // same time as the slide transition in js file
   & + & { margin-left: 12px; }
   &.active { background-color: $white; }
+  @include bp(xlarge){
+    display: inline-block;
+  }
 }
 
 .owl-nav {
+  .touch & { display: none !important;} // owl-carousel inlines display:block
   > div {
     position: absolute;
     top: 0;

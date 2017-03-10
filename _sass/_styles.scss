@@ -13,7 +13,7 @@
   padding-top: ($margin*6);
   padding-bottom: ($margin*6);
   color: $white;
-  background-color: rgba($norway-dark-grey, .75);
+  background-color: rgba(60, 67, 76, 0.75);
   text-align: center;
   &__bgs {
     position: absolute;
@@ -27,12 +27,24 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    display: block;
-    width: 33.33%;
+    display: none;
+    width: 100%;
     @include background-attributes;
-    &:nth-of-type(1){ left: 0; }
-    &:nth-of-type(2){ left: 33.33%; }
-    &:nth-of-type(3){ left: 66.66%; }
+    &:nth-of-type(1) {
+      left: 0;
+      display: block;
+    }
+    @include bp(large){
+      width: 33.33%;
+      &:nth-of-type(2) {
+        display: block;
+        left: 33.33%;
+      }
+      &:nth-of-type(3) {
+        display: block;
+        left: 66.66%;
+      }
+    }
   }
 }
 
@@ -51,7 +63,8 @@
   color: white;
   cursor: pointer;
   @include transition;
-  line-height: 1;
+  line-height: 1.33;
+  text-align: center;
   &:hover { text-decoration: none; }
   * + & { margin-top: 1.5em; }
   &--arrow {
@@ -94,6 +107,37 @@
     border: 1px solid $norway-grey;
     &:hover {
       background-color: $norway-grey;
+    }
+  }
+  &--slider-info {
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 99999em;
+    text-indent: -99999em;
+    $arrow-height: 14px;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      display: block;
+      width: 8px;
+      height: $arrow-height;
+      margin-top: -($arrow-height/2);
+      background-image: url(../img/icons/btn-arrow-white.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      .svg & { background-image: url(../img/icons/btn-arrow-white.svg); }
+    }
+    @include bp(large){
+      padding-left: 4em;
+      padding-right: 4em;
+      text-indent: 0;
+      border-radius: 4px;
+      &:after {
+        right: 8px;
+      }
     }
   }
   &--pulse {

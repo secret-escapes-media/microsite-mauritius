@@ -5,12 +5,20 @@
   text-align: center;
 }
 .poi {
-  display: inline-block;
-  width: 33.33%;
-  padding-left: 1.24875%;
-  padding-right: 1.24875%;
-  vertical-align: top;
+  max-width: $small;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: ($margin*2);
+  @include bp(large){
+    display: inline-block;
+    width: 50%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    vertical-align: top;
+  }
+  @include bp(xxlarge){
+    width: 33.33%;
+  }
 }
 
 .featured-poi {
@@ -42,7 +50,7 @@
       left: 0;
       right: 0;
       z-index: $z-content;
-      padding-top: 33%;
+      padding-top: 22.25%;
       padding-left: $margin;
       padding-right: $margin;
       @include transition;

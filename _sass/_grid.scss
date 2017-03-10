@@ -23,7 +23,7 @@ $margin: 1.6em;
 .row {
   @include container( $xxxlarge );
   position: relative;
-  & + .row { margin-top: 3.583em; }
+  & + .row { margin-top: 2.986em; }
   &--center {
     margin-left: auto;
     margin-right: auto;
@@ -44,9 +44,11 @@ $margin: 1.6em;
 }
 
 .row__column + .row__column {
-  margin-top: ( $margin / 2 );
+  margin-top: $margin;
+  .row--extra-margin & { margin-top: $margin*2; }
   @include bp(xlarge) {
     margin-top: 0;
+    .row--extra-margin & { margin-top: 0; }
   }
 }
 
@@ -106,4 +108,47 @@ $margin: 1.6em;
     align-items: center;
   }
 
+}
+
+
+
+// Bob is a type of layout that we use frequently for featured content. We
+// couldn't think of an accurate and consise name so we called it Bob. Its
+// columns with a feature image and copy that swap columns in alternating order.
+// it needs a higher breakpoint than the rest of the grid amongst other things
+.bob {
+  @include container(100%);
+  @include layout(12 1/2);
+  text-align: center;
+  &__image {
+    max-width: $large;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__text { padding-top: $margin; }
+  & + & { margin-top: ($margin*2); }
+  @include bp(xxlarge){
+    text-align: left;
+    &__text { padding-top: $margin; }
+    // GRID STUFF
+    & + & { margin-top: gutter(6); }
+    .flexbox & {
+      display: flex;
+      align-items: center;
+    }
+    &__image { @include span(7); }
+    &__text {
+      @include span(5 last);
+      padding-top: 0;
+    }
+    &:nth-child(even){
+      .bob__image { @include span(7 last); }
+      .bob__text { @include span(5); }
+      .flexbox & {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+    }  // END GRID STUFF
+  }
 }
