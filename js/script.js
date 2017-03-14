@@ -40,8 +40,16 @@
   });
 
   // current page nav highlight
-  var currentPage = $('body').data('current-page');
-  $('.' + currentPage + ' .site-nav__item--' + currentPage).addClass('site-nav__item--current');
+  var currentPage     = $('body').data('current-page'),
+      currentCategory = $('body').data('current-category');
+
+  // add class to individual nav item
+  $('.page--' + currentPage + ' [class*=nav__item--' + currentPage).addClass('is-current');
+
+  // if there is a category, add class to category nav item
+  if (currentCategory !== ''){
+    $('.category--' + currentCategory + ' [class*=nav__item--' + currentCategory).addClass('is-current');
+  }
 
 
 ///////////////////////////////////////
@@ -134,7 +142,7 @@ homeCarousel.owlCarousel({
   nav: true,
   navSpeed: transitionSpeed,
   smartSpeed: transitionSpeed,
-  dragEndSpeed: transitionSpeed,
+  dragEndSpeed: (transitionSpeed / 3),
   callbacks:true,
 });
 
