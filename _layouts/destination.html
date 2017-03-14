@@ -61,7 +61,7 @@ layout: default
 {% endfor %}
 
 <!-- OFFERS - FOR DESTINATION -->
-{% assign offers = site.data.offers | where: page-class, true | sort: 'price' %}
+{% assign offers = site.data.offers | where: page-class, true | sort: 'saved' | reverse %}
 {% if offers.size != 0 %}
   <section class="section offers">
     <div class="row row--padding">

@@ -3,7 +3,10 @@
 
   {% include head.html %}
 
-  <body id="top" {% if page.title %}class="{{ page.title | slugify }}" data-current-page="{{ page.title | slugify }}"{% endif %}>
+  {% assign page-title = page.title | slugify %}
+  {% assign page-category = page.category %}
+
+  <body id="top" class="page--{{page-title}} category--{{page-category}}" data-current-page="{{page-title}}" data-current-category="{{page-category}}">
 
     {% include tracking.html %}
 

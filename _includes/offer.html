@@ -2,11 +2,11 @@
 
   <a class="offer__link" href="{{ offer.link }}"><span class="btn btn--orange">View Offer</span></a>
 
-  <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.title | slugify }}.jpg')">
+  <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{% if offer.slug %}{{offer.slug}}{% else %}{{offer.title | slugify}}{% endif %}.jpg')">
   </div>
 
   <div class="offer__content">
-    <h3 class="offer__title"><a id="title-link-{{ offer.title | slugify }}" href="{{ offer.link }}">{{ offer.title }}</a></h3>
+    <h3 class="offer__title">{{ offer.title }}</h3>
     <h4 class="offer__location">{{ offer.location }}</h4>
     <p>{{ offer.description}}</p>
 

@@ -179,7 +179,7 @@ $nav-arrow-width: 66px;
     border-left: .5px solid $light-grey;
     @include transition;
     &:last-of-type { border-right: .5px solid $light-grey; }
-    &--current {
+    &.is-current {
       color: $norway-red;
       background-color: $norway-red-light;
       border-color: $norway-red-light;

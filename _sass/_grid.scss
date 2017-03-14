@@ -110,6 +110,21 @@ $margin: 1.6em;
 
 }
 
+// this is messy, need to improve the grids
+.row--columns-6-6-gutters-break-early {
+  .row__column + .row__column{
+    margin-top: $margin;
+  }
+}
+@include bp(xxlarge){
+  .row--columns-6-6-gutters-break-early {
+    @include two-column-grid( 6, 6, gutters );
+    .row__column + .row__column{
+      margin-top: 0;
+    }
+  }
+}
+
 
 
 // Bob is a type of layout that we use frequently for featured content. We

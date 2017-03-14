@@ -48,28 +48,32 @@ input, textarea, keygen, select, button {
   &--upper     { text-transform: uppercase; }
   &--italic    { font-style: italic; }
 
-  &--largest     { font-size: 2.25em; }
+  &--largest     { font-size: 2.986em; }
   &--larger      { font-size: 2.25em; }
   &--large       { font-size: 2em; }
   &--medium      { font-size: 1.867em; }
   &--small       { font-size: 1.867em; }
   &--smaller     { font-size: 1.867em; }
   &--smallest    { font-size: 1.467em; }
-  @include bp(medium){
-    &--largest     { font-size: 2.986em; }
-    &--larger      { font-size: 2.986em; }
+  @include bp(small){
+    &--largest     { font-size: 3.583em; }
+    &--larger      { font-size: 2.488em; }
     &--large       { font-size: 2.488em; }
   }
-  @include bp(large){
+  @include bp(medium){
     &--largest     { font-size: 5.16em; }
-    &--larger      { font-size: 4em; }
+    &--larger      { font-size: 2.9em; }
+  }
+  @include bp(large){
+    &--largest     { font-size: 6.192em; }
+    &--larger      { font-size: 3.533em; }
     &--large       { font-size: 3.375em; }
     &--medium      { font-size: 2.488em; }
     &--small       { font-size: 2.2em; }
   }
   @include bp(xxxlarge){
     &--largest     { font-size: 8em; }
-    &--larger      { font-size: 6.133em; }
+    &--larger      { font-size: 5.16em; }
     &--large       { font-size: 3.533em; }
     &--medium      { font-size: 2.9em; }
   }
