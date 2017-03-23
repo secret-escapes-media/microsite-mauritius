@@ -8,6 +8,17 @@
   &--light-grey { background-color: $norway-light-grey; }
 }
 
+.local {
+  text-align: center;
+  &__interview { text-align: left; }
+  &__avatar { max-width: $medium; margin-left: auto; margin-right: auto; }
+  & + & { margin-top: ($margin*4); }
+  @include bp(xlarge){
+    text-align: left;
+    // & + & { margin-top: ($margin*2); }
+  }
+}
+
 .offer-promo {
   position: relative;
   padding-top: ($margin*6);
@@ -85,6 +96,7 @@
       .svg & { background-image: url(../img/icons/btn-arrow-white.svg); }
     }
   }
+  &--small { font-size: 10px; }
   &--white { background-color: rgba($white, .3);
     &:hover { background-color: rgba($white, .5);}
   }

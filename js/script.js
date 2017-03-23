@@ -44,11 +44,11 @@
       currentCategory = $('body').data('current-category');
 
   // add class to individual nav item
-  $('.page--' + currentPage + ' [class*=nav__item--' + currentPage).addClass('is-current');
+  $('.page--' + currentPage + ' [class*=nav__item--' + currentPage + ']').addClass('is-current');
 
   // if there is a category, add class to category nav item
   if (currentCategory !== ''){
-    $('.category--' + currentCategory + ' [class*=nav__item--' + currentCategory).addClass('is-current');
+    $('.category--' + currentCategory + ' [class*=nav__item--' + currentCategory + ']').addClass('is-current');
   }
 
 
@@ -80,10 +80,24 @@
       event.preventDefault();
       // disable scrolling on background content (doesn't work iOS)
       $('body').addClass('disable-scroll');
-      // // open modal
-      modal.fadeIn('250', function(){
-        $(this).removeClass('is-closed').addClass('is-open');
-      });
+
+      // picks out specific video modal if there is data on link
+      if ($(event.target).data('video-modal')) {
+        // get youtube id and target div
+        var video     = $('.js-video-insert'),
+            youtubeId = video.data('youtube-id');
+        // open video modal
+        $('.js-modal-youtube').fadeIn('250', function(){
+          $(this).removeClass('is-closed').addClass('is-open');
+          // insert the code into the target with the id and autoplay
+          video.html('<iframe class="video__iframe" src="https://www.youtube.com/embed/'+ youtubeId +'?rel=0&amp;showinfo=0&autoplay=1" frameborder="0"></iframe>');
+        });
+      } else {
+        // open modal
+        modal.fadeIn('250', function(){
+          $(this).removeClass('is-closed').addClass('is-open');
+        });
+      }
     }
 
     // closes modal
@@ -92,9 +106,11 @@
       // enable scrolling
       $('body').removeClass('disable-scroll');
       // close modal with fade
-      modal.fadeOut('250', function(){
+      $('.modal.is-open').fadeOut('250', function(){
         $(this).removeClass('is-open').addClass('is-closed');
       });
+      // kill everything inside of video if its there
+      $('.js-video-insert').empty();
     }
 
     // launches modal when offer is clicked
@@ -109,6 +125,14 @@
 
     // closes modal on background click
     modal.on('click', function(event) {
+      if (event.target !== this){
+        return;
+      }
+      modalClose(event);
+    });
+
+    // DUPLICATED - closes modal on background click
+    $('.js-modal-youtube').on('click', function(event) {
       if (event.target !== this){
         return;
       }

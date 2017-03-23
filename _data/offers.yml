@@ -1,15 +1,15 @@
-- title: Norway city & fjord summer holiday with railway journey
-  category: cities
-  oslo: true
-  bergen: true
-  sognefjord: true
-  location: Oslo, Balestrand & Bergen
-  description: A seriously scenic experience of Norway's spectacular landscape, from charming Oslo to majestic fjords, with an unforgettable railway journey on the famous Flåm Line – breakfast, tours and travel included
-  price: 919
-  price-description: per person for 6 nights
-  saved: 23
-  expires: 2017/03/14
-  link: https://www.secretescapes.com/norway-city-and-fjord-summer-holiday-with-railway-journey-oslo-balestrand-and-bergen/sale?utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub
+# - title: Norway city & fjord summer holiday with railway journey
+#   category: cities
+#   oslo: true
+#   bergen: true
+#   sognefjord: true
+#   location: Oslo, Balestrand & Bergen
+#   description: A seriously scenic experience of Norway's spectacular landscape, from charming Oslo to majestic fjords, with an unforgettable railway journey on the famous Flåm Line – breakfast, tours and travel included
+#   price: 919
+#   price-description: per person for 6 nights
+#   saved: 23
+#   expires: 2017/03/14
+#   link: https://www.secretescapes.com/norway-city-and-fjord-summer-holiday-with-railway-journey-oslo-balestrand-and-bergen/sale?utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub
 
 - title: Grand Hotel Oslo
   category: cities
@@ -19,27 +19,74 @@
   price: 248
   price-description: per suite per night
   saved: 36
-  expires: 2017/03/14
-  link: https://www.secretescapes.com/grand-hotel-oslo-oslo-norway/sale?utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub
+  expires: 2017/03/28
+  link: https://www.secretescapes.com/grand-hotel-oslo-oslo-norway/sale?gce_abr=2#utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub
 
 - title: Clarion Hotel Stavanger
   category: landscapes
-  haugesund: true
+  stavanger: true
   location: Stavanger, Norway
   description: A stylish and contemporary hotel with concept restaurant in the coastal town of Stavanger - breakfast and thoughtful extras included
   price: 73
   price-description: per room per night
   saved: 53
-  expires: 2017/03/14
-  link: https://www.secretescapes.com/clarion-hotel-stavanger-stavanger-norway/sale?utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub
+  expires: 2017/03/28
+  link: https://www.secretescapes.com/clarion-hotel-stavanger-stavanger-norway/sale?gce_urg=0&utm_source=SE&utm_campaign=5_Norway_201703&utm_medium=Hub
 
-- title:  Quality Hotel Expo
+# - title: Spectacular Oslo & Bergen break with optional fjord tour
+#   category: cities
+#   oslo: true
+#   bergen: true
+#   location: Scandic St. Olavs plass & Clarion Hotel Admiral, Norway
+#   description: A fantastic four-night trip to Norway's Oslo and Bergen, with one of the world's most scenic train journeys between the two cities - including flights and an optional fjord tour
+#   price: 399
+#   price-description: per person for 4 nights
+#   saved: 36
+#   expires: 2017/03/21
+#   link: https://www.secretescapes.com/spectacular-oslo-and-bergen-break-with-optional-fjord-tour-scandic-st-olavs-plass-and-clarion-hotel-admiral-norway-2/sale?gce_urg=0&utm_source=SE&utm_campaign=7_Norway_201703&utm_medium=Hub
+#
+# - title: Picturesque Norway city & fjord break with Flåm railway journey
+#   slug: picturesque-norway-city-fjord-break-with-flam-railway-journey
+#   category: landscapes
+#   sognefjord: true
+#   bergen: true
+#   location: Bergen & an optional Oslo stay
+#   description: A fabulous Bergen adventure with a stay at a new designer hotel, including flights, Flåm Railway travel and a fjord boat trip, plus optional Oslo stay
+#   price: 599
+#   price-description: per person for 3 nights
+#   saved: 33
+#   expires: 2017/03/17
+#   link: https://www.secretescapes.com/picturesque-norway-city-and-fjord-break-with-railway-journey-bergen-and-an-optional-oslo-stay/sale?gce_urg=0&utm_source=SE&utm_campaign=8_Norway_201703&utm_medium=Hub
+
+- title: Best Western Karl Johan
   category: cities
   oslo: true
-  location: Western Oslo, Norway
-  description: A scenic Norwegian break on Oslo's waterfront with easy access to city and country, includes breakfast
-  price: 76
+  location: Oslo, Norway
+  description: A laid-back stay in the heart of Oslo's cultural centre, at a contemporary base with a historic twist, including buffet breakfast
+  price: 101
   price-description: per room per night
-  saved: 41
-  expires: 2017/03/14
-  link: https://www.secretescapes.com/quality-hotel-expo-western-oslo-norway/sale?utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub
+  saved: 20
+  expires: 2017/03/28
+  link: https://www.secretescapes.com/best-western-karl-johan-oslo-norway/sale?gce_urg=0&utm_source=SE&utm_campaign=9_Norway_201703&utm_medium=Hub
+
+- title: Hotel Oleana
+  category: cities
+  bergen: true
+  location: Bergen, Norway
+  description: Luxe boutique stay with on-site Peruvian restaurant and bar in Norway's Gateway to the Fjords
+  price: 128
+  price-description: per room per night
+  saved: 44
+  expires: 2017/03/28
+  link: https://www.secretescapes.com/hotel-oleana-bergen-norway/sale?gce_urg=0&utm_source=SE&utm_campaign=10_Norway_201703&utm_medium=Hub
+
+- title: First Hotel Grims Grenka
+  category: cities
+  oslo: true
+  location: Oslo, Norway
+  description: A centrally-located, five-star design hotel with ultra-sleek interiors and rooftop terrace
+  price: 115
+  price-description: per room per night
+  saved: 20
+  expires: 2017/03/28
+  link: https://www.secretescapes.com/first-hotel-grims-grenka-oslo-norway/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=11_Norway_201703

@@ -112,6 +112,11 @@ strong        { font-weight: 800; }
 .align-right  { text-align: right; }
 .align-center { text-align: center; }
 
+ol > li {
+  list-style-position: outside;
+  margin-left: 1.75em;
+}
+
 hr {
   border: 0;
   height: 1px;

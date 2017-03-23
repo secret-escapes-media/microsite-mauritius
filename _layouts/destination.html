@@ -16,6 +16,9 @@ layout: default
     <div class="row row--padding">
       <div class="row align-center">
         <p class="line-length line-length--center p--large">{{destination.intro}}</p>
+        {% if destination.youtube-id %}
+        <p> <a href="{{poi.link}}" class="btn btn--small btn--outline-light js-open-modal" target="_blank" data-video-modal="true">Watch Video</a> </p>
+        {% endif %}
       </div>
     </div>
     <div class="row row--padding">
@@ -92,3 +95,12 @@ layout: default
   </section>
 {% endif %}
 
+<!-- Puts the youtube modal at the bottom of the page, would ideally have this in footer -->
+{% for destination in destinations %}
+  {% if destination.title == page.title %}
+    {% if destination.youtube-id %}
+      {% assign youtube-id-string = destination.youtube-id %}
+      {% include modal-youtube.html youtube-id=youtube-id-string %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
