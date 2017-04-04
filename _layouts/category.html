@@ -38,23 +38,6 @@ layout: default
 {% endfor %}
 
 <!-- OFFERS - FOR CATEGORY -->
-<!-- <section class="section offers">
-  <div class="row row--padding">
-    <h2 class="align-center title title--medium title--color title--light title--expanded">{{page.title}} Offers</h2>
-  </div>
-  <div class="row row--padding">
-    {% assign offers = site.data.offers | where: "category", page-class | sort: 'saved' | reverse %}
-    {% for offer in offers %}
-      {% include offer.html %}
-    {% endfor %}
-  </div>
-  <div class="align-center">
-    <a href="{{site.baseurl}}/offers" class="btn btn--orange">See All Offers</a>
-  </div>
-</section> -->
-
-
-<!-- OFFERS - FOR DESTINATION -->
 {% assign offers = site.data.offers | where: "category", page-class | sort: 'saved' | reverse %}
 {% if offers.size != 0 %}
   <section class="section offers">
