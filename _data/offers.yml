@@ -1,35 +1,14 @@
-- title: Grand Hotel Oslo
+- title: Spectacular Oslo & Bergen break with optional fjord tour
   category: cities
   oslo: true
-  location: Oslo, Norway
-  description: Stay at a distinctive hotel with chic dining options and its own wine cellar, near the National Theatre and other stately landmarks - breakfast included
-  price: 248
-  price-description: per suite per night
-  saved: 36
-  expires: 2017/04/04
-  link: https://www.secretescapes.com/grand-hotel-oslo-oslo-norway/sale?gce_abr=2#utm_source=SE&utm_campaign=Norway_20170306&utm_medium=Hub
-
-- title: Clarion Hotel Stavanger
-  category: landscapes
-  stavanger: true
-  location: Stavanger, Norway
-  description: A stylish and contemporary hotel with concept restaurant in the coastal town of Stavanger - breakfast and thoughtful extras included
-  price: 73
-  price-description: per room per night
-  saved: 53
-  expires: 2017/04/04
-  link: https://www.secretescapes.com/clarion-hotel-stavanger-stavanger-norway/sale?gce_urg=0&utm_source=SE&utm_campaign=5_Norway_201703&utm_medium=Hub
-
-- title: Best Western Karl Johan
-  category: cities
-  oslo: true
-  location: Oslo, Norway
-  description: A laid-back stay in the heart of Oslo's cultural centre, at a contemporary base with a historic twist, including buffet breakfast
-  price: 97
-  price-description: per room per night
-  saved: 20
-  expires: 2017/04/04
-  link: https://www.secretescapes.com/best-western-karl-johan-oslo-norway/sale?gce_urg=0&utm_source=SE&utm_campaign=9_Norway_201703&utm_medium=Hub
+  bergen: true
+  location: Scandic St. Olavs plass & Clarion Hotel Admiral, Norway
+  description: A fantastic four-night trip to Norway's Oslo and Bergen, with one of the world's most scenic train journeys between the two cities - including flights and an optional fjord tour
+  price: 459
+  price-description: per person for 4 nights
+  saved: 37
+  expires: 2017/04/07
+  link: https://www.secretescapes.com/spectacular-oslo-and-bergen-break-with-optional-fjord-tour-scandic-st-olavs-plass-and-clarion-hotel-admiral-norway-2/sale?gce_urg=0&utm_source=SE&utm_campaign=7_Norway_201703&utm_medium=Hub
 
 - title: Hotel Oleana
   category: cities
@@ -39,7 +18,7 @@
   price: 128
   price-description: per room per night
   saved: 44
-  expires: 2017/04/04
+  expires: 2017/04/11
   link: https://www.secretescapes.com/hotel-oleana-bergen-norway/sale?gce_urg=0&utm_source=SE&utm_campaign=10_Norway_201703&utm_medium=Hub
 
 - title: First Hotel Grims Grenka
@@ -50,7 +29,7 @@
   price: 115
   price-description: per room per night
   saved: 20
-  expires: 2017/04/04
+  expires: 2017/04/11
   link: https://www.secretescapes.com/first-hotel-grims-grenka-oslo-norway/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=11_Norway_201703
 
 - title: Farris Bad
@@ -60,5 +39,5 @@
   price: 214
   price-description: per room per night
   saved: 33
-  expires: 2017/04/04
+  expires: 2017/04/11
   link: https://www.secretescapes.com/farris-bad-larvik-norway/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=12_Norway_201703
