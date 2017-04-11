@@ -7,30 +7,8 @@
   price: 459
   price-description: per person for 4 nights
   saved: 37
-  expires: 2017/04/11
+  expires: 2017/04/14
   link: https://www.secretescapes.com/spectacular-oslo-and-bergen-break-with-optional-fjord-tour-scandic-st-olavs-plass-and-clarion-hotel-admiral-norway-2/sale?gce_urg=0&utm_source=SE&utm_campaign=7_Norway_201703&utm_medium=Hub
-
-- title: Hotel Oleana
-  category: cities
-  bergen: true
-  location: Bergen, Norway
-  description: Luxe boutique stay with on-site Peruvian restaurant and bar in Norway's Gateway to the Fjords
-  price: 128
-  price-description: per room per night
-  saved: 44
-  expires: 2017/04/11
-  link: https://www.secretescapes.com/hotel-oleana-bergen-norway/sale?gce_urg=0&utm_source=SE&utm_campaign=10_Norway_201703&utm_medium=Hub
-
-- title: First Hotel Grims Grenka
-  category: cities
-  oslo: true
-  location: Oslo, Norway
-  description: A centrally-located, five-star design hotel with ultra-sleek interiors and rooftop terrace
-  price: 115
-  price-description: per room per night
-  saved: 20
-  expires: 2017/04/11
-  link: https://www.secretescapes.com/first-hotel-grims-grenka-oslo-norway/sale?gce_urg=0&utm_source=SE&utm_medium=Hub&utm_campaign=11_Norway_201703
 
 - title: Farris Bad
   category: cities
@@ -39,7 +17,7 @@
   price: 214
   price-description: per room per night
   saved: 33
-  expires: 2017/04/11
+  expires: 2017/04/20
   link: https://www.secretescapes.com/farris-bad-larvik-norway/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=12_Norway_201703
 
 - title: First Hotel Marin
@@ -50,7 +28,7 @@
   price: 48
   price-description: per room per night
   saved: 43
-  expires: 2017/04/11
+  expires: 2017/04/20
   link: https://www.secretescapes.com/first-hotel-marin-bergen-norway/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=13_Norway_201704
 
 - title: Magic Hotel
