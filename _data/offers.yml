@@ -1,24 +1,3 @@
-- title: Farris Bad
-  category: cities
-  location: Larvik, Norway
-  description: Upscale beachfront stay at the first Nordic balneological health resort, with a supersized spa
-  price: 214
-  price-description: per room per night
-  saved: 33
-  expires: 2017/04/20
-  link: https://www.secretescapes.com/farris-bad-larvik-norway/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=12_Norway_201703
-
-- title: First Hotel Marin
-  category: cities
-  bergen: true
-  location: Bergen, Norway
-  description: A unique stay in the centre of picturesque Bergen, just a stone's throw from the harbour
-  price: 48
-  price-description: per room per night
-  saved: 43
-  expires: 2017/04/20
-  link: https://www.secretescapes.com/first-hotel-marin-bergen-norway/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=13_Norway_201704
-
 - title: Magic Hotel
   category: cities
   bergen: true
@@ -27,7 +6,7 @@
   price: 73
   price-description: per room per night
   saved: 55
-  expires: 2017/04/20
+  expires: 2017/04/25
   link: https://www.secretescapes.com/magic-hotel-bergen-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=14_Norway_201704
 
 - title: Sola Strand Hotel
@@ -37,7 +16,7 @@
   price: 79
   price-description: per room per night
   saved: 47
-  expires: 2017/04/20
+  expires: 2017/04/25
   link: https://www.secretescapes.com/sola-strand-hotel-sola-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=15_Norway_201704
 
 - title: City stays & scenic cruises in the beautiful Norwegian fjords
