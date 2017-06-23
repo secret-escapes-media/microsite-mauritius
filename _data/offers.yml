@@ -1,32 +1,27 @@
-- title: Magic Hotel
-  category: cities
-  bergen: true
-  location: Bergen, Norway
-  description: A brand-new hip hotel in the centre of Bergen, designed by a top New York designer
-  price: 73
+- title: Example hotel offer
+  location: Location Name, Mauritius
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  price: 99
   price-description: per room per night
   saved: 55
-  expires: 2017/04/25
-  link: https://www.secretescapes.com/magic-hotel-bergen-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=14_Norway_201704
+  expires: 2018/04/25
+  link: #offer-link
+  description-long: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  description-list: >
+    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
 
-- title: Sola Strand Hotel
-  category: landscapes
-  location: Sola, Norway
-  description: Discover one of the world's sixth best beaches on Norway's gorgeous coast, with breakfast and more
-  price: 79
+- title: Another Example hotel offer
+  location: Location Name, Mauritius
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  price: 75
   price-description: per room per night
-  saved: 47
-  expires: 2017/04/25
-  link: https://www.secretescapes.com/sola-strand-hotel-sola-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=15_Norway_201704
-
-- title: City stays & scenic cruises in the beautiful Norwegian fjords
-  category: cities
-  bergen: true
-  stavanger: true
-  location: Bergen & Stavanger, Norway
-  description: A stunning Norwegian adventure, with cruises into the dramatic fjords, two hotels and all travel
-  price: 699
-  price-description: per person for 5 nights
   saved: 33
-  expires: 2017/04/25
-  link: https://www.secretescapes.com/picturesque-norway-city-bergen-and-stavanger-norway/sale?utm_source=SE&utm_medium=Hub&utm_campaign=16_Norway_201704
+  expires: 2018/04/25
+  link: #offer-link
+  description-long: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  description-list: >
+    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>

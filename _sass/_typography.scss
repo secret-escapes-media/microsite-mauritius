@@ -1,12 +1,27 @@
 // general typographic styles
 
 
+// -------- Title font --------
+
+@font-face {
+	font-family: 'CanvasScript-Heavy';
+	src: url('../fonts/hinted-CanvasScript-Heavy.eot');
+	src: url('../fonts/hinted-CanvasScript-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/hinted-CanvasScript-Heavy.woff2') format('woff2'),
+		url('../fonts/hinted-CanvasScript-Heavy.woff') format('woff'),
+		url('../fonts/hinted-CanvasScript-Heavy.ttf') format('truetype');
+	font-weight: bolder;
+	font-style: italic;
+}
+
+
 // -------- root typography styles --------
+
 
 $core-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 $main-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$title-font-family: 'Raleway', 'Helvetica Neue', sans-serif;
-$subtitle-font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+$title-font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
+$banner-title-font-family: 'CanvasScript-Heavy', 'Brush Script MT', serif;
 
 html { font-size:62.5%; }
 body,
@@ -22,25 +37,39 @@ input, textarea, keygen, select, button {
 
 // -------- Headings --------
 
+.banner-title {
+  font-family: $banner-title-font-family;
+  font-size: 8.916em;
+  line-height: .9;
+  &--lg {
+    font-size: 11.391em;
+  }
+}
+
 .title {
   font-family: $title-font-family;
-  letter-spacing: .15em;
+  letter-spacing: .025em;
   line-height: 1.15;
-  text-transform: uppercase;
   word-break: break-word;
+  &--core {
+    font-family: $main-font-family;
+  }
+
   + *   { margin-top: .75em; }
   * + & { margin-top: .75em; }
   &--margin-none + * { margin-top: 0; }
   &--margin + * { margin-top: 1.5em; }
-  * + &--margin-top { margin-top: 3em; }
+  * + &--margin-top { margin-top: 1.5em; }
 
   &--sub-heading { margin-top: 0 !important; }
 
-  &--color     { color: $title-black }
-  &--sub       { font-family: $subtitle-font-family; font-weight: 400; line-height: 1.1; }
+  // &--color {  }
+  &--blue      { color: $m-blue; }
+  &--yellow    { color: $m-yellow; }
+  &--green     { color: $m-green; }
   &--light     { font-weight: 300; }
   &--bold      { font-weight: 500; }
-  &--bolder    { font-weight: 600; }
+  &--bolder    { font-weight: 700; }
   &--condense  { letter-spacing: 0; }
   &--expanded  { letter-spacing: .25em; }
   &--tight     { line-height: .9; }

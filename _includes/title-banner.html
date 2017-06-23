@@ -1,14 +1,11 @@
-<section class="title-banner js-fading-backgrounds">
+<section class="title-banner">
   <div class="title-banner__wrap">
-    {% if page.layout == 'destination' or page.layout == 'category' %}
-    <div class="title-banner__bg js-fading-background" style="background-image: url({{site.baseurl}}/img/bg/{% if page.slug %}{{page.slug}}{% else %}{{page.title | slugify}}{% endif %}/01.jpg);"></div>
-    <div class="title-banner__bg js-fading-background" style="background-image: url({{site.baseurl}}/img/bg/{% if page.slug %}{{page.slug}}{% else %}{{page.title | slugify}}{% endif %}/02.jpg);"></div>
-    <div class="title-banner__bg js-fading-background" style="background-image: url({{site.baseurl}}/img/bg/{% if page.slug %}{{page.slug}}{% else %}{{page.title | slugify}}{% endif %}/03.jpg);"></div>
-    {% else %}
-    <div class="title-banner__bg" style="background-image: url({{site.baseurl}}/img/bg/{% if page.slug %}{{page.slug}}{% else %}{{page.title | slugify}}{% endif %}.jpg);"></div>
-    {% endif %}
+    <div class="title-banner__bg" style="background: url({{site.baseurl}}/img/bg/pattern.png) -575px -120px/1300px no-repeat,url({{site.baseurl}}/img/bg/{{page.id}}.jpg) center/cover no-repeat;"></div>
     <div class="title-banner__title">
-      <h1 class="title title--larger title--expanded title--light">{% if page.title-long %}{{page.title-long}}{% else %}{{page.title}}{% endif %}</h1>
+      <div class="row row--padding">
+        <h1 class="banner-title {% if page.id == 'overview' %}banner-title--lg js-fit-text{% endif %}">{{page.title}}</h1>
+        {% if page.subtitle %}<h2 class="title title--small">{{page.subtitle}}</h2>{% endif %}
+      </div>
     </div>
   </div>
 </section>

@@ -1,6 +1,106 @@
 // all custom styles for the site
 
 
+
+.video-section {
+  padding-top: 8em;
+  padding-bottom: 8em;
+  text-align: center;
+  background-color: $dark-grey;
+  background-image: url('../img/bg/adventure.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .touch & { background-attachment: scroll; }
+  &__cta {
+    @include transition;
+    cursor: pointer;
+    &:hover { transform: scale(1.05);}
+  }
+}
+
+
+.feature {
+  &__text {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: $z-content-upper;
+    color: $white;
+    font-family: $banner-title-font-family;
+    line-height: 1;
+    font-size: 4em;
+    @include bp(large){
+      font-size: 6em;
+    }
+    .csstransforms.csstransforms3d & {
+      top: 50%;
+      padding-top: 0;
+      transform: translateY(-50%);
+    }
+  }
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-overlay;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content;
+    opacity: .66;
+    @include background-attributes;
+    @include transition;
+  }
+  &:hover &__bg {
+    opacity: .33;
+  }
+
+
+
+  // custom resizing from bg-image-ratio
+  position: relative;
+  background-color: #282a3a;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%; // 16-9
+    @include bp(large){
+      padding-top: 66.666666666667%; // 3-2
+    }
+  }
+
+
+  // GRID SHIZZ
+  margin-bottom: ($margin);
+  @include bp(small){
+    @include layout(12 2/3);
+    @include gallery(6);
+    margin-bottom: gutter(12);
+  }
+  @include bp(xlarge){
+    @include gallery(4);
+    &:nth-last-child(-n+4) {
+      @include gallery(6);
+      .feature__text { font-size: 8em; }
+    }
+  }
+  // END GRID SHIZZ
+}
+
+
 // ---------- GENERAL STYLES ----------
 
 .invert-text { color: $white; }
@@ -100,8 +200,16 @@
   &--white { background-color: rgba($white, .3);
     &:hover { background-color: rgba($white, .5);}
   }
-  &--red { background-color: $norway-red;
-    &:hover { background-color: darken($norway-red, 10)}
+  &--color,
+  &--blue
+   { background-color: $m-blue;
+    &:hover { background-color: darken($m-blue, 10)}
+  }
+  &--green { background-color: $m-green;
+    &:hover { background-color: darken($m-green, 10)}
+  }
+  &--yellow { background-color: $m-yellow;
+    &:hover { background-color: darken($m-yellow, 10)}
   }
   &--orange { background-color: $se-orange;
     &:hover { background-color: darken($se-orange, 5)}
@@ -193,6 +301,51 @@
       display: table-cell;
       text-align: left;
       vertical-align: middle;
+    }
+  }
+}
+
+
+// ---------- YOUTUBE VIDEO THUMBNAIL ----------
+
+.video {
+  position: relative;
+  height: 0;
+  max-width: 100%;
+  padding-bottom: 56.25%;
+  background-color: #000;
+  overflow: hidden;
+  &__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include background-attributes;
+  }
+  &__play {
+    $button-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: $button-size;
+    width: $button-size;
+    margin-top: -( $button-size / 2 );
+    margin-left: -( $button-size / 2 );
+    background-image: url("../img/icons/play.png");
+    @include background-attributes;
+    background-size: contain;
+    cursor: pointer;
+    @include transition;
+    &:hover {
+      transform: scale( 1.25, 1.25);
     }
   }
 }

@@ -1,11 +1,10 @@
 // Offer block styles
 
-section.offers { border-top: 5px solid $norway-light-grey; }
+section.offers { background-color: $norway-light-grey; }
 
 .offer {
   position: relative;
   // GRID SHIZZ
-  max-width: $large;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: ($margin * 2);
@@ -174,6 +173,36 @@ section.offers { border-top: 5px solid $norway-light-grey; }
           };
         }
       }
+    }
+  }
+  // large offer card
+  &--lg {
+    float: none !important;
+    @include gallery(12);
+    @include clearfix;
+    .offer__images > .row__column { margin-top: 0; }
+    .offer__image-smaller {
+      display: inline-block;
+      width: 50%;
+      @include bp( xlarge ){
+        display: block;
+        width: 100%;
+      }
+    }
+    .offer__content {
+      padding: $margin ($margin*1.25);
+      @include bp(large){ padding: ($margin*1.25) ($margin*1.75); }
+    }
+    li {
+      margin-left: 1.5em;
+      font-weight: 200;
+      letter-spacing: .015em;
+      list-style-position: outside;
+    }
+    .offer__bottom {
+      margin-top: 1.5em;
+      padding-top: 1.5em;
+      border-top: 1px solid $grey;
     }
   }
 }

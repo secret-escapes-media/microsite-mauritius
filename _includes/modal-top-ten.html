@@ -1,0 +1,22 @@
+<div class="js-modal modal is-closed">
+  <div class="modal__ui-wrap row">
+    <div class="js-close-modal modal__close"></div>
+    <div class="js-modal-nav modal__nav modal__nav--next" data-nav-direction="next"></div>
+    <div class="js-modal-nav modal__nav modal__nav--previous" data-nav-direction="previous"></div>
+    <div class="modal__content-wrap row">
+      {% assign top-ten = page.top-ten | reverse %}
+      {% for item in top-ten %}
+      <div class="modal__content modal__content--{{item.number}}" data-content-category="{{item.number}}">
+        <div class="bg-image-ratio bg-image-ratio--16-9" style="background-image:url('{{site.baseurl}}/img/content/{{page.id}}/{{item.number}}.jpg')"></div>
+        <div class="modal__content--padding">
+          <h2 class="title title--smaller title--light align-center">{{item.number}}. {{item.title}}</h2>
+          <p>{{item.content}}</p>
+          <div class="align-center">
+            {% if item.link %}<a href="{{item.link}}" class="btn btn--orange al">Mehr Entdecken</a>{% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -3,10 +3,7 @@
 
   {% include head.html %}
 
-  {% assign page-title = page.title | slugify %}
-  {% assign page-category = page.category %}
-
-  <body id="top" class="page--{{page-title}} category--{{page-category}}" data-current-page="{{page-title}}" data-current-category="{{page-category}}">
+  <body id="top" class="page--{{page.id}}" data-current-page="{{page.id}}">
 
     {% include tracking.html %}
 
@@ -15,6 +12,9 @@
     {{ content }}
 
     {% include footer.html %}
+
+    {% if page.id == "overview" %}{% include modal-top-ten.html %}{% endif %}
+    {% if page.youtube-id %}{% include modal-youtube.html %}{% endif %}
 
   </body>
 

@@ -2,10 +2,56 @@
 layout: default
 ---
 
-{% assign page-class = page.title | slugify %}
-
 {% include title-banner.html %}
 
 {% include microsite-nav.html %}
 
-{{content}}
+{% if content != "" %}
+  {{content}}
+{% else %}
+  {% if page.intro %}
+  <section class="section bg--light-grey">
+    <div class="row row--padding">
+      <p class="line-length line-length--center p--lead align-center">{{page.intro}}</p>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.youtube-id %}
+  <section class="section video-section" style="background-image: url('{{site.baseurl}}/img/bg/{{page.id}}-video.jpg');">
+    <div class="row row--padding row--xl">
+      <img class="video-section__cta js-open-youtube-modal" src="{{site.baseurl}}/img/video/video-banner.png" alt="Watch video">
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="section">
+    <div class="row row--padding">
+    {% for content in page.contents %}
+      <div class="bob" id="{{content.title | slugify}}">
+        <div class="bob__image">
+          <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/{% if content.image-slug %}{{content.image-slug}}{% else %}{{content.title | slugify}}{% endif %}.jpg');"></div>
+        </div>
+        <div class="bob__text">
+          <h2 class="title title--smaller title--color">{{content.title}}</h2>
+          <p>{{content.content}}</p>
+          {% if content.link %}<a href="{{content.link}}" class="btn btn--color">Mehr Erfahren</a>{% endif %}
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+<!-- OFFERS -->
+<section class="section offers">
+  <div class="row row--padding">
+    <h2 class="align-center title title--large">Offers</h2>
+  </div>
+  <div class="row row--padding">
+    {% assign offers = site.data.offers | sort: 'saved' | reverse %}
+    {% for offer in offers%}
+      {% include offer.html %}
+    {% endfor %}
+  </div>
+</section>

@@ -5,9 +5,9 @@
 
 $white:      #fff;
 $black:      #000;
-$light-grey: #e1e1e1;
-$grey:       #74787d;
-$dark-grey:  #1a1a1a;
+$light-grey: #f2f5f7;
+$grey:       #dadcdf;
+$dark-grey:  #a1a5a9;
 
 $white-15:    rgba(255,255,255,.15);
 $white-25:    rgba(255,255,255,.25);
@@ -35,14 +35,17 @@ $se-dark-grey-5:  rgba(41,39,40,.5);
 $se-dark-grey-66: rgba(41,39,40,.66);
 $se-dark-grey-85: rgba(41,39,40,.85);
 
-$norway-red:          #b92f29;
-$norway-red-light:    #f6eae9;
+$m-blue:       #0c8c82;
+$m-blue-light: #f1f8f8;
+$m-yellow:     #cecb28;
+$m-green:      #7eba20;
+
 $norway-blue:         #2578b2;
 $norway-grey:         #dadcdf;
 $norway-dark-grey:    #4f5762;
 $norway-dark-grey-5:  rgba(79,87,98,.5);
 $norway-dark-grey-66: rgba(79,87,98,.66);
-$norway-light-grey:   #f6f6f7;
+$norway-light-grey:   $light-grey;
 
 $text-black:      #4d4d4d;
 $text-grey:       #808080;
@@ -169,6 +172,7 @@ $z-overlay-upper:   25;
 $z-overlay:         20;
 $z-nav-upper:       15;
 $z-nav:             10;
+$z-content-overlay: 9;
 $z-content-upper:   5;
 $z-content:         0;
 $z-background:      -1;

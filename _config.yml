@@ -1,10 +1,10 @@
 # Site settings
-title: Norway
+title: Mauritius
 description: >
-  Explore Norway in our guide and see your wanderlust reel at the sight of epic fjords, electric culture and modernist cities
-baseurl: "/norway" # the subpath of your site, e.g. /blog/
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+baseurl: "/mauritius" # the subpath of your site, e.g. /blog/
 url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-exclude: [node_modules, gulpfile.js, package.json, bower_components, bower.json, README.md]
+exclude: [node_modules, gulpfile.js, package.json, package-lock.json, bower_components, bower.json, README.md]

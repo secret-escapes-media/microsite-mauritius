@@ -1,15 +1,7 @@
 <head>
 
   <!-- this mess gets the correct meta description for the page & sets variable  -->
-  {% if page.layout == 'destination' %}
-    {% assign page-class = page.title | slugify %}
-    {% assign destinations = site.data.[page.category] %}
-    {% for destination in destinations %}
-      {% if destination.title == page.title %}
-        {% assign page-description = destination.intro | strip_html | truncate: 155 %}
-      {% endif %}
-    {% endfor %}
-  {% elsif page.intro %}
+  {% if page.intro %}
     {% assign page-description = page.intro | strip_html | strip_newlines | truncate: 155 %}
   {% else %}
     {% assign page-description = site.description %}
@@ -36,7 +28,7 @@
   <!-- END Social Data -->
 
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700italic,700,600italic,600,400italic,300italic,300|Raleway:300,400|Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700italic,700,600italic,600,400italic,300italic,300|Quicksand:400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
   <script src="{{ site.baseurl }}/js/scripts.min.js"></script>
 

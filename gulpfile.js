@@ -19,7 +19,7 @@ gulp.task('serve', function () {
       server: {
         baseDir: '_site/',
         routes: {
-          '/norway': '_site/'
+          '/mauritius': '_site/'
         }
       }
     });
@@ -34,7 +34,7 @@ gulp.task('concatScripts', function(){
   return gulp.src([
     './js/modernizr-custom.js',
     './bower_components/jquery/dist/jquery.min.js',
-    './bower_components/owl.carousel/dist/owl.carousel.min.js',
+    './bower_components/FitText.js/jquery.fittext.js',
     './bower_components/jquery.countdown/dist/jquery.countdown.min.js',
     './js/script.js'])
   .pipe(concat('scripts.js'))

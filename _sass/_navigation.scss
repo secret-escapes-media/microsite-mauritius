@@ -180,16 +180,16 @@ $nav-arrow-width: 66px;
     @include transition;
     &:last-of-type { border-right: .5px solid $light-grey; }
     &.is-current {
-      color: $norway-red;
-      background-color: $norway-red-light;
-      border-color: $norway-red-light;
+      color: $m-blue;
+      background-color: $m-blue-light;
+      border-color: $m-blue-light;
     }
     &:hover {
-      background-color: $norway-red-light;
-      border-color: $norway-red-light;
+      background-color: $m-blue-light;
+      border-color: $m-blue-light;
     }
     // changes neighbour item border
-    &:hover + & { border-color: $norway-red-light; }
+    &:hover + & { border-color: $m-blue-light; }
   }
   &__link {
     display: inline-block;
@@ -365,7 +365,7 @@ $mobile-nav-width: 75%;
   }
   p { margin-top: .5em; }
   .logo--secret-escapes { max-width: 110px; }
-  .logo--partner { max-width: 69px; }
+  .logo--partner { max-width: 80px; }
 }
 
 
@@ -404,7 +404,7 @@ $icon-size: 27px;
     }
   }
   &--partner {
-    max-width: 69px;
+    max-width: 100px;
     & + & {
       padding-left: 1em;
     }
