@@ -8,7 +8,7 @@ section.offers { background-color: $norway-light-grey; }
   margin-left: auto;
   margin-right: auto;
   margin-bottom: ($margin * 2);
-  @include bp(xxlarge){
+  @include bp(xlarge){
     @include layout(12 1);
     @include gallery(6);
     margin-bottom: gutter(12);
@@ -101,13 +101,12 @@ section.offers { background-color: $norway-light-grey; }
       line-height: 1.2;
       text-align: center;
       border-right: 1px solid $norway-grey;
-      vertical-align: bottom !important;
+      vertical-align: middle !important;
     &-num {
-      display: block;
+      display: inline-block;
       width: $circle-height;
       height: $circle-height;
       margin-top: .2em;
-      margin-left: .2em;
       text-align: center;
       color: #fff;
       line-height: $circle-height;
@@ -143,7 +142,7 @@ section.offers { background-color: $norway-light-grey; }
   }
   &__arrow {
     display: none;
-    @include bp(small){
+    @include bp(medium){
       display: inline-block;
       width: $circle-height;
       height: $circle-height;
@@ -157,7 +156,7 @@ section.offers { background-color: $norway-light-grey; }
     }
   }
   &__bottom {
-    @include bp(small){
+    @include bp(medium){
       display: table;
       width: 100%;
       * { vertical-align: middle; }
@@ -165,7 +164,9 @@ section.offers { background-color: $norway-light-grey; }
       span { vertical-align: baseline; }
       &-item {
         display: table-cell;
+        padding-right: 1em;
         &--right {
+          padding-right: 0;
           text-align: right;
           vertical-align: bottom !important;
           @include bp(medium){

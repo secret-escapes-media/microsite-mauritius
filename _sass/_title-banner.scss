@@ -15,8 +15,31 @@
     bottom: 0;
     z-index: $z-background;
     background-color: $norway-dark-grey;
-    background-image: url('../img/bg/bg.jpg');
     @include background-attributes;
+    .page--overview &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: auto;
+      bottom: 0;
+      z-index: 10;
+      display: block;
+      width: 60%;
+      background-image: url('../img/bg/pattern.png');
+      background-position: 100% 0%;
+      background-size: 1000px;
+      background-repeat: no-repeat;
+      opacity: .85;
+      @include bp(large){
+        width: 40%;
+        background-position: 100% -10%;
+      }
+      @include bp(xxxlarge){
+        background-position: 100% 5%;
+        background-size: 1150px;
+      }
+    }
   }
   &__title {
     position: absolute;

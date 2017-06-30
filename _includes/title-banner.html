@@ -1,10 +1,12 @@
 <section class="title-banner">
   <div class="title-banner__wrap">
-    <div class="title-banner__bg" style="background: url({{site.baseurl}}/img/bg/pattern.png) -575px -120px/1300px no-repeat,url({{site.baseurl}}/img/bg/{{page.id}}.jpg) center/cover no-repeat;"></div>
-    <div class="title-banner__title">
-      <div class="row row--padding">
-        <h1 class="banner-title {% if page.id == 'overview' %}banner-title--lg js-fit-text{% endif %}">{{page.title}}</h1>
-        {% if page.subtitle %}<h2 class="title title--small">{{page.subtitle}}</h2>{% endif %}
+    <div class="title-banner__bg" style="background-image: url('{{site.baseurl}}/img/bg/{{page.id}}.jpg');"></div>
+    <div class="row" style="height:100%;">
+      <div class="title-banner__title">
+        <div class="row row--padding">
+          <h1 class="banner-title {% if page.id == 'overview' %}banner-title--lg js-fit-text{% endif %}">{% if page.id == 'overview' %}Mauritius{% else %}{{page.title}}{% endif %}</h1>
+          {% if page.subtitle %}<h2 class="title title--small">{{page.subtitle}}</h2>{% endif %}
+        </div>
       </div>
     </div>
   </div>

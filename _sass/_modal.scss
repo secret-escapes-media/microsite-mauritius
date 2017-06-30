@@ -1,5 +1,12 @@
 // modal specific
 
+
+* {
+  // stop touch highlight color on mobile
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 $icon-size: 3em;
 
 .modal {

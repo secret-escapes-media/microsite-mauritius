@@ -166,7 +166,7 @@ $nav-arrow-width: 66px;
       background-repeat: no-repeat;
       background-size: $nav-arrow-width auto;
     }
-    @include bp(large){
+    @include bp(xlarge){
       // remove the prompt for sideways scroll
       padding-right: 0;
       overflow: visible;
@@ -198,7 +198,7 @@ $nav-arrow-width: 66px;
     &:hover,
     &--current { text-decoration: none; }
   }
-  @include bp(large){
+  @include bp(xlarge){
     overflow: visible;
     height: auto;
     .flexbox & {
@@ -215,67 +215,6 @@ $nav-arrow-width: 66px;
     }
   }
 }
-
-// ---------- DROP DOWN LIST NAV ----------
-
-.category-nav {
-  display: none;
-  @include bp(large){
-    position: absolute;
-    top: ($site-nav-height)+1;
-    left: 0;
-    right: 0;
-    z-index: $z-nav;
-    display: none;
-    width: 100%;
-    margin-left: -1px;
-    margin-right: -1px;
-    text-align: center;
-    table-layout: fixed; // weird even columns table cell hack
-    transition: all ($transition-time*2) ease;
-    .csstransforms.csstransforms3d & {
-      display: table;
-      transform: scaleY(0);
-      transform-origin: top center;
-    }
-    .site-nav__item:hover &{
-      display: table;
-      .csstransforms.csstransforms3d & {
-      transform: scaleY(1);
-      }
-    }
-  }
-  &__item {
-    display: table-cell;
-    width: 2%;  // weird even columns table cell hack
-    height: ($site-nav-height*3);
-    background-color: $norway-dark-grey;
-    color: $norway-dark-grey;
-    vertical-align: top;
-    @include background-attributes;
-  }
-  &__link {
-    display: table;
-    width: 100%;
-    height: 100%;
-    background-color: $white-75;
-    &-wrap {
-      display: table-cell;
-      vertical-align: middle;
-      white-space: normal;
-      font-size: 1.2em;
-      line-height: 1.33;
-      padding-left: $margin;
-      padding-right: $margin;
-    }
-    @include transition;
-    &:hover {
-      text-decoration: none;
-      letter-spacing: .225em
-    }
-  }
-}
-
 
 
 // ---------- MOBILE NAV OFF CANVAS ----------

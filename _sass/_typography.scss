@@ -1,27 +1,13 @@
 // general typographic styles
 
 
-// -------- Title font --------
-
-@font-face {
-	font-family: 'CanvasScript-Heavy';
-	src: url('../fonts/hinted-CanvasScript-Heavy.eot');
-	src: url('../fonts/hinted-CanvasScript-Heavy.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/hinted-CanvasScript-Heavy.woff2') format('woff2'),
-		url('../fonts/hinted-CanvasScript-Heavy.woff') format('woff'),
-		url('../fonts/hinted-CanvasScript-Heavy.ttf') format('truetype');
-	font-weight: bolder;
-	font-style: italic;
-}
-
-
 // -------- root typography styles --------
 
 
 $core-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 $main-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 $title-font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
-$banner-title-font-family: 'CanvasScript-Heavy', 'Brush Script MT', serif;
+$banner-title-font-family: 'Caveat', 'Brush Script MT', serif;
 
 html { font-size:62.5%; }
 body,
@@ -39,10 +25,17 @@ input, textarea, keygen, select, button {
 
 .banner-title {
   font-family: $banner-title-font-family;
-  font-size: 8.916em;
-  line-height: .9;
+  font-size: 5.16em;
+  line-height: .7;
+  font-weight: 700;
+  letter-spacing: -0.033em;
+  color: #f1f7f6;
+  @include bp(medium){ font-size: 7.43em; }
+  @include bp(large){ font-size: 8.916em; }
+  @include bp(xxlarge){ font-size: 10.699em; }
   &--lg {
-    font-size: 11.391em;
+    letter-spacing: -0.02em;
+    @include bp(xxlarge){ font-size: 11.391em;}
   }
 }
 
@@ -71,7 +64,7 @@ input, textarea, keygen, select, button {
   &--bold      { font-weight: 500; }
   &--bolder    { font-weight: 700; }
   &--condense  { letter-spacing: 0; }
-  &--expanded  { letter-spacing: .25em; }
+  &--expanded  { letter-spacing: .2em; }
   &--tight     { line-height: .9; }
   &--tighter   { line-height: .8; }
   &--upper     { text-transform: uppercase; }

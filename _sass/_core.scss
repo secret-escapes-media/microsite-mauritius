@@ -57,10 +57,10 @@ $paragraph-black: #666666;
 
 $xxxlarge:  1200px;
 $xxlarge:   970px;
-$xlarge:    800px;
+$xlarge:    820px;
 $large:     650px;
 $medium:    520px;
-$small:     400px;
+$small:     350px;
 
 @mixin bp($width){
   @if $width == xxxlarge {
@@ -192,7 +192,7 @@ $z-background:      -1;
     width: 100%;
   }
   &--circle {
-    border-radius: 9999999em;
+    border-radius: 999999em;
   }
   &--1-1:before   { padding-top: 100%; }
   &--4-3:before   { padding-top: 75%; }

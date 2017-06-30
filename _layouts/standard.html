@@ -30,12 +30,12 @@ layout: default
     {% for content in page.contents %}
       <div class="bob" id="{{content.title | slugify}}">
         <div class="bob__image">
-          <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/{% if content.image-slug %}{{content.image-slug}}{% else %}{{content.title | slugify}}{% endif %}.jpg');"></div>
+          {% if content.link %}<a href="{{content.link}}"{% if content.link-external %}target="_blank" id="track-image-{{content.title | slugify}}"{% endif %}>{% endif %}<div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/{% if content.image-slug %}{{content.image-slug}}{% else %}{{content.title | slugify}}{% endif %}.jpg');"></div>{% if content.link %}</a>{% endif %}
         </div>
         <div class="bob__text">
           <h2 class="title title--smaller title--color">{{content.title}}</h2>
           <p>{{content.content}}</p>
-          {% if content.link %}<a href="{{content.link}}" class="btn btn--color">Mehr Erfahren</a>{% endif %}
+          {% if content.link %}<a href="{{content.link}}" class="btn btn--color"{% if content.link-external %}target="_blank" id="track-cta-{{content.title | slugify}}"{% endif %}>Mehr Erfahren</a>{% endif %}
         </div>
       </div>
     {% endfor %}
@@ -46,7 +46,7 @@ layout: default
 <!-- OFFERS -->
 <section class="section offers">
   <div class="row row--padding">
-    <h2 class="align-center title title--large">Offers</h2>
+    <h2 class="align-center title title--large">Angebote</h2>
   </div>
   <div class="row row--padding">
     {% assign offers = site.data.offers | sort: 'saved' | reverse %}

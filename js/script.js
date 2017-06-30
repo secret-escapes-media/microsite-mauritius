@@ -29,6 +29,17 @@
     $('html').addClass('touch');
   }
 
+  // searches for specific queryString, returns value or true if empty value
+  function getQueryStringByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return true;
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
   // making large one word title scale to viewport
   // $('.banner-title--lg').fitText();
 
@@ -64,107 +75,40 @@
   }
 
 
-// ///////////////////////////////////////
-// //    Generic modal
-// ///////////////////////////////////////
-//
-//   var modal          = $('.js-modal'),
-//       modalLaunchBtn = $('.js-open-modal'),
-//       modalCloseBtn  = $('.js-close-modal');
-//
-//     // opens modal
-//     function modalOpen(event){
-//       event.preventDefault();
-//       // disable scrolling on background content (doesn't work iOS)
-//       $('body').addClass('disable-scroll');
-//
-//       // picks out specific video modal if there is data on link
-//       if ($(event.target).data('video-modal')) {
-//         // get youtube id and target div
-//         var video     = $('.js-video-insert'),
-//             youtubeId = video.data('youtube-id');
-//         // open video modal
-//         $('.js-modal-youtube').fadeIn('250', function(){
-//           $(this).removeClass('is-closed').addClass('is-open');
-//           // insert the code into the target with the id and autoplay
-//           video.html('<iframe class="video__iframe" src="https://www.youtube.com/embed/'+ youtubeId +'?rel=0&amp;showinfo=0&autoplay=1" frameborder="0"></iframe>');
-//         });
-//       } else {
-//         // open modal
-//         modal.fadeIn('250', function(){
-//           $(this).removeClass('is-closed').addClass('is-open');
-//         });
-//       }
-//     }
-//
-//     // closes modal
-//     function modalClose(event){
-//       event.preventDefault();
-//       // enable scrolling
-//       $('body').removeClass('disable-scroll');
-//       // close modal with fade
-//       $('.modal.is-open').fadeOut('250', function(){
-//         $(this).removeClass('is-open').addClass('is-closed');
-//       });
-//       // kill everything inside of video if its there
-//       $('.js-video-insert').empty();
-//     }
-//
-//     // launches modal when offer is clicked
-//     modalLaunchBtn.on('click', function(event) {
-//       modalOpen(event);
-//     });
-//
-//     // closes modal on close icon click
-//     modalCloseBtn.on('click', function(event) {
-//       modalClose(event);
-//     });
-//
-//     // closes modal on background click
-//     modal.on('click', function(event) {
-//       if (event.target !== this){
-//         return;
-//       }
-//       modalClose(event);
-//     });
-//
-//     // DUPLICATED - closes modal on background click
-//     $('.js-modal-youtube').on('click', function(event) {
-//       if (event.target !== this){
-//         return;
-//       }
-//       modalClose(event);
-//     });
-//
-//     // closes modal on escape key press
-//     $(document).keyup(function(event) {
-//        if (event.keyCode == 27) {
-//          modalClose(event);
-//         }
-//     });
-
-
 ///////////////////////////////////////
 //      Expand Interview
 ///////////////////////////////////////
 
+// Hide all interview content
 $('.js-interview').hide();
+
+// toggle the intreview open or close
 $('.js-expand-interview-toggle').on('click',function(e){
   e.preventDefault();
   // finds closest interview
   var parent = $(this).closest('.interview'),
       interview = $('.js-interview',parent);
-
   // shows and hides interview
   interview.stop().slideToggle(600);
-
   // Toggles between the text content
   if ($(this).text() === 'Interview Lesen') {
     $(this).text('Verstecke interview');
+    // scrolls down to open interview
+    $('html,body').animate({
+      scrollTop: interview.offset().top
+    }, 500);
   } else {
     $(this).text('Interview Lesen');
   }
 });
+
+// open interview on page load with query string
+if (getQueryStringByName('interview')) {
+  // shows interview
+  $('#julia-thell .js-interview').stop().show();
+  // changes button text to close interview
+  $('#julia-thell .js-expand-interview-toggle').text('Verstecke interview');
+}
 
 
 ///////////////////////////////////////
@@ -181,91 +125,13 @@ $('.js-offer-expires').each(function() {
       $(this).remove();
     } else if (event.offset.totalDays === 0) {
       // there is 0 days left, just hours, so ends today
-      $(this).html(event.strftime('Ending <strong>Today</strong>'));
+      $(this).html(event.strftime('<strong>Heute</strong> Enden'));
     } else {
       // there are days left, outputs with either day or days
-      $(this).html(event.strftime('Ending in <strong>%-D day%!D</strong>'));
+      $(this).html(event.strftime('Enden in <strong>%-D %!D:tag,tage;</strong>'));
     }
   });
 });
-
-///////////////////////////////////////
-//      Youtube thumbnails
-///////////////////////////////////////
-
-  // // stopped on touch devices
-  // if ( $('html.touch').length === 0 ) {
-  //
-  //   // Loops through all videos on page
-  //   $('.js-youtube-thumbnail').each(function(index, el) {
-  //     var video             = $(this).find('.video__iframe'),
-  //         videoSrc          = video.attr('src'),
-  //         thumbnailImg      = $(this).data('thumbnail-img'),
-  //         thumbnailElement  = '<div class="video__thumbnail" style="background-image: url(\'' + thumbnailImg + '\')"><div class="video__play js-play-video"></div></div>';
-  //
-  //     // hide video, but keep aspect ratio
-  //     video.css('visibility', 'hidden');
-  //
-  //     // Add thumbnail element to hold image & play button
-  //     $(this).prepend(thumbnailElement);
-  //     var thumbnail   = $(this).find('.video__thumbnail'),
-  //         playButton  = $(this).find('.js-play-video');
-  //
-  //     // play button event
-  //       playButton.on('click', function(e) {
-  //         e.preventDefault();
-  //         // add auto play query to iframe
-  //         video.attr('src', videoSrc + '&autoplay=1');
-  //         // fade out iframe and show video
-  //         thumbnail.fadeOut( 175, function() {
-  //           video.css('visibility', 'visible');
-  //         });
-  //       });
-  //
-  //   });
-  //
-  // }
-
-
-  // // opens modal
-  //   function modalOpen(event){
-  //     event.preventDefault();
-  //     // disable scrolling on background content (doesn't work iOS)
-  //     $('body').addClass('disable-scroll');
-  //
-  //     // picks out specific video modal if there is data on link
-  //     if ($(event.target).data('video-modal')) {
-  //       // get youtube id and target div
-  //       var video     = $('.js-video-insert'),
-  //           youtubeId = video.data('youtube-id');
-  //       // open video modal
-  //       $('.js-modal-youtube').fadeIn('250', function(){
-  //         $(this).removeClass('is-closed').addClass('is-open');
-  //         // insert the code into the target with the id and autoplay
-  //         video.html('<iframe class="video__iframe" src="https://www.youtube.com/embed/'+ youtubeId +'?rel=0&amp;showinfo=0&autoplay=1" frameborder="0"></iframe>');
-  //       });
-  //     } else {
-  //       // open modal
-  //       modal.fadeIn('250', function(){
-  //         $(this).removeClass('is-closed').addClass('is-open');
-  //       });
-  //     }
-  //   }
-  //
-  //   // closes modal
-  //   function modalClose(event){
-  //     event.preventDefault();
-  //     // enable scrolling
-  //     $('body').removeClass('disable-scroll');
-  //     // close modal with fade
-  //     $('.modal.is-open').fadeOut('250', function(){
-  //       $(this).removeClass('is-open').addClass('is-closed');
-  //     });
-  //     // kill everything inside of video if its there
-  //     $('.js-video-insert').empty();
-  //   }
-
-
 
 
   ///////////////////////////////////////
@@ -337,10 +203,6 @@ $('.js-offer-expires').each(function() {
            youtubeModalClose(event);
           }
       });
-
-
-
-
 
 
 ///////////////////////////////////////

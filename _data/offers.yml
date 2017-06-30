@@ -1,27 +1,29 @@
-- title: Example hotel offer
-  location: Location Name, Mauritius
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  price: 99
-  price-description: per room per night
-  saved: 55
-  expires: 2018/04/25
-  link: #offer-link
-  description-long: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Traumzeit auf Mauritius mit Katamaran-Kreuzfahrt
+  slug: traumzeit-auf-mauritius-mit-katamaran-kreuzfahrt
+  location: Katamaran & Radisson Blu Poste Lafayette Resort & Spa – Mauritius
+  description: Paradiesischer Badeurlaub & luxuriöser Katamarantörn – inkl. Flügen, Verpflegung & Transfers
+  price: 2495
+  price-description: pro Person für 11 Nächte
+  saved: 17
+  expires: 2017/07/11
+  link: https://www.secretescapes.de/traumzeit-am-indischen-ozean-mit-katamarn-kreuzfahrt-poste-lafayette-mauritius/sale?utm_source=SE&utm_medium=Hub&utm_campaign=Mauritius_2017_Katamaran
+  description-long: Türkisblaues Meer an endlos weißen Sandstränden, romantische Buchten und palmengesäumte Lagunen – an der urwüchsigen Nordostküste präsentiert sich der Inselstaat Mauritius von seiner eindrucksvollen Seite. In angenehmer Distanz zu den großen Touristenzentren im Nordwesten der Insel genießen Sie hier paradiesische Erholung im Einklang mit der Natur.
   description-list: >
-    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+    <li>Vom Sonnendeck des Katamarans das tiefe Türkisblau des Ozeans bewundern</li>
+    <li>Im sanften Takt der Wellen zu unberührten Traumstränden getragen werden</li>
+    <li>In einer Hängematte im Schatten der Palmen tropische Cocktails genießen</li>
 
-- title: Another Example hotel offer
-  location: Location Name, Mauritius
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  price: 75
-  price-description: per room per night
-  saved: 33
-  expires: 2018/04/25
-  link: #offer-link
-  description-long: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Bilderbuchstrände an der Ostküste von Mauritius
+  slug: bilderbuchstrande-an-der-ostkuste-von-mauritius
+  location: The Residence Mauritius, Belle Mare, Mauritius
+  description: Romantisches 5*-Strandresort – inkl. Emirates-Flügen, Privattranfers, Halbpension &
+  price: 2099
+  price-description: pro Person für 7 Nächte
+  saved: 31
+  expires: 2017/07/11
+  link: https://www.secretescapes.de/bilderbuchstraende-an-der-ostkueste-von-mauritius-the-residence-mauritius-belle-mare-mauritius/sale?utm_source=SE&utm_medium=Hub&utm_campaign=Mauritius_2017_Ostkueste
+  description-long: Im The Residence Mauritius werden Sie mit exotischem Garten, traumhaftem Poolbereich mit Blick auf das türkisblaue Meer und drei atmosphärischen Restaurants empfangen, die traditionelle kreolische Aromen und feurige Gewürze mit internationalen Spezialitäten zu köstlichen, kreativen Variationen vereinen.
   description-list: >
-    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+    <li>Die traumhafte Lage direkt am weißen Sandstrand auskosten</li>
+    <li>Gehobene Kulinarik bei atemberaubender Aussicht genießen</li>
+    <li>In der luxuriösen Anlage mit traumhaftem Poolbereich entspannen</li>
