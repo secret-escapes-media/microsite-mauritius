@@ -1,6 +1,6 @@
 <div class="offer">
 
-  <a class="offer__link" href="{{ offer.link }}"><span class="btn btn--orange">Zum Angebot</span></a>
+  <a class="offer__link" href="{{ offer.link }}"><span class="btn btn--orange">Angebot Ansehen</span></a>
 
   <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{% if offer.slug %}{{offer.slug}}{% else %}{{offer.title | slugify}}{% endif %}.jpg')">
   </div>
